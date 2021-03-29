@@ -26,13 +26,13 @@ Please install `git` first if it is not installed already.
 ~~~
 sudo apt install git
 ~~~
-
-Then clone the repo to your downloads directory.
+### Installation
+Clone the repo to your downloads directory.
 ~~~
 git clone https://github.com/noobcoder84/myubuntu/ ~/Downloads/
 ~~~
 
-Finally, navigate to `myubuntu` folder and run the script.
+Then navigate to `myubuntu` folder and run the script.
 ~~~
 sh setup.sh
 ~~~
