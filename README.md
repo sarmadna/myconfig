@@ -6,7 +6,7 @@ Hello
 
 The `setup.sh` handles post-installation tasks and installs the apps that I would like to use on my PC. I am currently on Ubuntu 20.04 LTS. More details on the tasks are described below.
 
-## Post-installation tasks
+## Ubuntu post-installation tasks
 
 * Install terminal apps `curl` `vim` `zsh` etc.
 * Install GUI apps `libreoffice` `vlc`
@@ -18,13 +18,26 @@ The `setup.sh` handles post-installation tasks and installs the apps that I woul
 * Install oh-my-zsh
 * Create keyboard shortcut for rofi (this is done manually because I don't know how to write a script to do this automatically)
 
-## Installation 
+## Install My Ubuntu
 
-It is easy. All you need is to run the 'setup.sh' file. Or copy the following command.
+### Requirements
 
-~~~./setup.sh~~~
+Please install `git` first if it is not installed already.
+~~~
+sudo apt install git
+~~~
 
-## Rofi Configuration
+Then clone the repo to your downloads directory.
+~~~
+git clone https://github.com/noobcoder84/myubuntu/ ~/Downloads/
+~~~
+
+Finally, navigate to `myubuntu` folder and run the script.
+~~~
+sh setup.sh
+~~~
+
+### Rofi Configuration
 
 Create a new keyboard shortcu
 
