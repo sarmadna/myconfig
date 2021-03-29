@@ -4,14 +4,14 @@
 
 Hello 
 
-The 'setup.sh' handles post-installation task and installs the apps that I would like to use on my PC. I am currently on Ubuntu 20.04 LTS. More details on the tasks are described below.
+The `setup.sh` handles post-installation tasks and installs the apps that I would like to use on my PC. I am currently on Ubuntu 20.04 LTS. More details on the tasks are described below.
 
 ## Post-installation tasks
 
-* Install terminal apps 'curl' 'vim' 'zsh' etc.
-* Install GUI apps 'libreoffice' 'vlc'
-* Install GUI tweaks 'papirus-icon-theme' 'gnome-session' 'gnome-shell-extensions'
-* Get 'vundle'
+* Install terminal apps `curl` `vim` `zsh` etc.
+* Install GUI apps `libreoffice` `vlc`
+* Install GUI tweaks `papirus-icon-theme` `gnome-session` `gnome-shell-extensions`
+* Get `vundle`
 * Get Powerline fonts
 * Get Yosemite fonts
 * Copy dotfiles to home directory
@@ -22,7 +22,7 @@ The 'setup.sh' handles post-installation task and installs the apps that I would
 
 It is easy. All you need is to run the 'setup.sh' file. Or copy the following command.
 
-```./setup.sh```
+~~~./setup.sh~~~
 
 ## Rofi Configuration
 
