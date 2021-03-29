@@ -1,0 +1,33 @@
+# The prompt
+PROMPT='$(_user_host):$(_current_path)$(_return_status) '
+
+
+# The right-hand prompt
+#RPROMPT='$(git_prompt_info)$(git_prompt_status)'
+RPROMPT='$(git_prompt_info)'
+
+function _current_path() {
+    echo "%F{cyan}%c%f"
+}
+
+function _return_status() {
+    echo "%(?:❯:%F{red}❯%f)"
+}
+
+function _user_host() {
+    echo "%F{green}%n@%m%f"
+}
+
+ZSH_THEME_GIT_PROMPT_PREFIX="%F{white}(%f%F{red}"
+ZSH_THEME_GIT_PROMPT_SUFFIX="%F{white}%f"
+ZSH_THEME_GIT_PROMPT_DIRTY="%F{white})%f%F{yellow}*%f"
+ZSH_THEME_GIT_PROMPT_CLEAN="%F{white})%f"
+ZSH_THEME_GIT_PROMPT_RENAMED=""
+
+ZSH_THEME_GIT_PROMPT_UNTRACKED="%F{yellow} ◒%f"
+ZSH_THEME_GIT_PROMPT_ADDED="%F{green} ✚%f"
+ZSH_THEME_GIT_PROMPT_MODIFIED="%F{yellow} ✹%f"
+ZSH_THEME_GIT_PROMPT_DELETED="%F{red} ✖%f"
+ZSH_THEME_GIT_PROMPT_UNMERGED="%F{blue} §%f"
+ZSH_THEME_GIT_PROMPT_AHEAD="%F{cyan}⇡ %f"
+ZSH_THEME_GIT_PROMPT_BEHIND="%F{cyan}⇣ %f"
