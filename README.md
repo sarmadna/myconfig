@@ -29,7 +29,7 @@ sudo apt install git
 ### Installation
 Clone the repo to your downloads directory.
 ~~~
-git clone https://github.com/noobcoder84/myubuntu/ ~/Downloads/
+git clone https://github.com/noobcoder84/myubuntu.git ~/Downloads/MyUbuntu/
 ~~~
 
 Then navigate to `myubuntu` folder and run the script.
