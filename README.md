@@ -26,7 +26,9 @@ Please install `git` first if it is not installed already.
 ~~~
 sudo apt install git
 ~~~
+
 ### Installation
+
 Clone the repo to your downloads directory.
 ~~~
 git clone https://github.com/noobcoder84/myubuntu.git ~/Downloads/MyUbuntu/
