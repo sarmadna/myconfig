@@ -41,7 +41,7 @@ sh setup.sh
 
 ### Rofi Configuration
 
-Create a new keyboard shortcu
+Create a new keyboard shortcut
 
 Add the following line
 
