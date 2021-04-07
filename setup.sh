@@ -2,7 +2,7 @@
 
 echo
 
-sudo apt install curl vim zsh rofi gnome-session gnome-shell-extensions font-manager papirus-icon-theme libreoffice
+sudo apt install curl vim zsh rofi gnome-session gnome-shell-extensions font-manager papirus-icon-theme libreoffice vlc google-chrome-stable telegram-desktop zoom
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
@@ -12,10 +12,10 @@ git clone https://github.com/supermarin/YosemiteSanFranciscoFont.git ~/Downloads
 
 cp ~/Downloads/MyUbuntu/dotfiles/vimrc ~/.vimrc
 
-# sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-# cp ~/Downloads/MyUbuntu/dotfiles/zshrc ~/.zshrc
+cp ~/Downloads/MyUbuntu/dotfiles/zshrc ~/.zshrc
 
-# cp ~/Downloads/MyUbuntu/omztheme/saros.zsh-theme ~/.oh-my-zsh/themes/
+cp ~/Downloads/MyUbuntu/omztheme/saros.zsh-theme ~/.oh-my-zsh/themes/
 
 
