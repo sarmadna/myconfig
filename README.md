@@ -1,42 +1,45 @@
-# My Ubuntu 
+# My Linux
 
 ## Introduction
 
 Hello 
 
-The `setup.sh` handles post-installation tasks and installs the apps that I would like to use on my PC. I am currently on Ubuntu 20.04 LTS. More details on the tasks are described below.
+The script files handle post-installation tasks and install the apps that I would like to use on my PC. More details on the tasks are described below.
 
-## Ubuntu post-installation tasks
+## Linux post-installation tasks
 
 * Install terminal apps `curl` `vim` `zsh` etc.
 * Install GUI apps `libreoffice` `vlc`
-* Install GUI tweaks `papirus-icon-theme` `gnome-session` `gnome-shell-extensions`
+* Install GUI tweaks
 * Get `vundle`
 * Get Powerline fonts
-* Get Yosemite fonts
 * Copy dotfiles to home directory
 * Install oh-my-zsh
 * Create keyboard shortcut for rofi (this is done manually because I don't know how to write a script to do this automatically)
 
-## Install My Ubuntu
+## Install My Linux
 
 ### Requirements
 
 Please install `git` first if it is not installed already.
-~~~
-sudo apt install git
-~~~
 
 ### Installation
 
 Clone the repo to your downloads directory.
 ~~~
-git clone https://github.com/noobcoder84/myubuntu.git ~/Downloads/MyUbuntu/
+git clone https://github.com/sarmadna/mylinux.git ~/Downloads/MyLinux/
 ~~~
 
-Then navigate to `myubuntu` folder and run the script.
+Then navigate to `MyLinux` folder and run the script.
+
+For Fedora;
 ~~~
-sh setup.sh
+sh fedora.sh
+~~~
+
+For Ubuntu;
+~~~
+sh ubuntu.sh
 ~~~
 
 ### Rofi Configuration
