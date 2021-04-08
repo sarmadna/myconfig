@@ -2,9 +2,13 @@
 
 echo
 
-sudo dnf -y install wget curl vim rofi zsh gnome-tweaks gnome-shell-extension-dash-to-dock powerline-fonts util-linux-user
+sudo dnf -y install wget curl vim rofi zsh gnome-tweaks gnome-shell-extension-dash-to-dock util-linux-user
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+git clone https://github.com/powerline/fonts.git ~/Downloads/PowerlineFonts/
+
+sh ~/Downloads/PowerlineFonts/install.sh
 
 cp ~/Downloads/MyLinux/dotfiles/vimrc ~/.vimrc
 

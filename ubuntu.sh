@@ -2,9 +2,13 @@
 
 echo
 
-sudo apt -y install wget curl vim rofi gnome-session gnome-shell-extensions font-manager papirus-icon-theme libreoffice vlc fonts-powerline zsh
+sudo apt -y install wget curl vim rofi gnome-session gnome-shell-extensions font-manager papirus-icon-theme libreoffice vlc zsh
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+git clone https://github.com/powerline/fonts.git ~/Downloads/PowerlineFonts/
+
+sh ~/Downloads/PowerlineFonts/install.sh
 
 cp ~/Downloads/MyLinux/dotfiles/vimrc ~/.vimrc
 
