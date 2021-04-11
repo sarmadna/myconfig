@@ -12,8 +12,6 @@ sh ~/Downloads/PowerlineFonts/install.sh
 
 cp ~/Downloads/MyLinux/dotfiles/vimrc ~/.vimrc
 
-update-alternatives --config gdm3-theme.gresource
-
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 cp ~/Downloads/MyLinux/dotfiles/zshrc ~/.zshrc
