@@ -48,7 +48,7 @@ Create a new keyboard shortcut
 
 Add the following line
 
-rofi -show drun -show-icons -lines 10 -font "SFNS Display 14"
+rofi -show drun -show-icons -lines 10 -font "System-ui Regular 14"
 
 
 

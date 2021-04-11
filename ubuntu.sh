@@ -6,7 +6,7 @@ sudo apt -y install wget curl vim rofi gnome-session gnome-shell-extensions font
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-git clone https://github.com/powerline/fonts.git ~/Downloads/PowerlineFonts/
+git clone https://github.com/powerline/fonts.git ~/Downloads/PowerlineFonts
 
 sh ~/Downloads/PowerlineFonts/install.sh
 
