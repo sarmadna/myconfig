@@ -2,7 +2,7 @@
 
 echo
 
-sudo apt -y install wget curl vim rofi gnome-session gnome-shell-extensions font-manager papirus-icon-theme libreoffice vlc zsh
+sudo apt -y install wget curl vim rofi gnome-session gnome-shell-extensions font-manager papirus-icon-theme libreoffice vlc google-chrome-stable zoom telegram-desktop zsh
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
