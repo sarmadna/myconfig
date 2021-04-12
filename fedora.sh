@@ -2,7 +2,7 @@
 
 echo
 
-sudo dnf -y install wget curl vim rofi zsh gnome-tweaks gnome-shell-extension-dash-to-dock util-linux-user
+sudo dnf -y install wget curl vim rofi zsh gnome-tweaks util-linux-user
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
