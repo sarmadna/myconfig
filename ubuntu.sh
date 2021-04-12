@@ -19,6 +19,3 @@ cp ~/Downloads/MyLinux/dotfiles/zshrc ~/.zshrc
 cp ~/Downloads/MyLinux/omztheme/saros.zsh-theme ~/.oh-my-zsh/themes/
 
 chsh -s $(which zsh)
-
-reboot
-
