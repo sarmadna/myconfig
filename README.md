@@ -27,7 +27,7 @@ Please install `git` first if it is not installed already.
 
 Clone the repo to your downloads directory.
 ~~~
-git clone https://github.com/sarmadna/mylinux.git ~/Downloads/MyLinux/
+git clone https://github.com/sarmadna/MyLinux.git ~/Downloads/MyLinux/
 ~~~
 
 Then navigate to `MyLinux` folder and run the script.
