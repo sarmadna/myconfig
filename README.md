@@ -27,7 +27,7 @@ Please install `git` first if it is not installed already.
 
 Clone the repo to your downloads directory.
 ~~~
-git clone https://github.com/sarmadna/mylinux.git ~/Downloads/MyLinux/
+git clone https://github.com/sarmadna/mylinux.git ~/Downloads/MyLinux
 ~~~
 
 Then navigate to `MyLinux` folder and run the script.
@@ -48,7 +48,7 @@ Create a new keyboard shortcut
 
 Add the following line
 
-rofi -show drun -show-icons -lines 10 -font "System-ui Regular 14"
+rofi -show drun -show-icons -lines 10 -font "System-ui Regular 12"
 
 
 
