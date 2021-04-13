@@ -20,7 +20,3 @@ cp ~/Downloads/MyLinux/omztheme/saros.zsh-theme ~/.oh-my-zsh/themes/
 
 chsh -s $(which zsh)
 
-echo Installation complete
-
-echo Please reboot the system
-
