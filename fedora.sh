@@ -1,7 +1,5 @@
 #! /bin/sh
 
-echo
-
 sudo dnf -y install wget curl vim rofi zsh gnome-tweaks util-linux-user papirus-icon-theme
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
@@ -21,4 +19,8 @@ cp ~/Downloads/MyLinux/dotfiles/zshrc ~/.zshrc
 cp ~/Downloads/MyLinux/omztheme/saros.zsh-theme ~/.oh-my-zsh/themes/
 
 chsh -s $(which zsh)
+
+echo Installation complete
+
+echo Please reboot the system
 
