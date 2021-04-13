@@ -12,6 +12,8 @@ sh ~/Downloads/PowerlineFonts/install.sh
 
 cp ~/Downloads/MyLinux/dotfiles/vimrc ~/.vimrc
 
+vim +PluginInstall +qall
+
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 cp ~/Downloads/MyLinux/dotfiles/zshrc ~/.zshrc
