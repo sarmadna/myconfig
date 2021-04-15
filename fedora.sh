@@ -1,6 +1,6 @@
 #! /bin/sh
 
-sudo dnf -y install wget curl vim rofi zsh gnome-tweaks util-linux-user papirus-icon-theme
+sudo dnf -y install wget curl vim rofi zsh gnome-tweaks util-linux-user papirus-icon-theme arc-theme
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
