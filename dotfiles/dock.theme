@@ -1,0 +1,17 @@
+
+[PlankTheme]
+TopRoundness=12
+BottomRoundness=0
+LineWidth=1
+OuterStrokeColor=0;;0;;0;;255
+FillStartColor=0;;0;;0;;255
+FillEndColor=0;;0;;0;;255
+InnerStrokeColor=0;;0;;0;;255
+[PlankDockTheme]
+HorizPadding=2
+TopPadding=2
+BottomPadding=2
+ItemPadding=3
+IndicatorSize=5
+IconShadowSize=0
+CascadeHide=false
