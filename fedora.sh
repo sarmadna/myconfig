@@ -1,9 +1,7 @@
 #! /bin/sh
 
 yellow='\033[1;33m'
-
 cyan='\033[1;36m'
-
 nc='\033[0m'
 
 printf "${yellow}>>>${nc} ${cyan}Starting post-installation script...${nc}\n"
