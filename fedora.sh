@@ -30,7 +30,7 @@ sed -i '16,17s/^.//' ~/.vimrc
 printf "${yellow}>>>${nc} ${cyan}Installing powerline fonts...${nc}\n"
 git clone https://github.com/powerline/fonts.git ~/Downloads/PowerlineFonts
 sh ~/Downloads/PowerlineFonts/install.sh
-gsettings set org.gnome.desktop.interface monospace-font-name "DejaVu Sans Mono for Powerline Book 11"
+#gsettings set org.gnome.desktop.interface monospace-font-name "DejaVu Sans Mono for Powerline Book 11"
 
 printf "${yellow}>>>${nc} ${cyan}Installing zsh and oh-my-zsh...${nc}\n"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
