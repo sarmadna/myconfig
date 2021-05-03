@@ -6,7 +6,7 @@ nc='\033[0m'
 
 printf "${yellow}>>>${nc} ${cyan}Starting post-installation script...${nc}\n"
 sudo timedatectl set-timezone Asia/Baghdad
-sudo dnf -y install wget curl vim rofi zsh htop gnome-tweaks util-linux-user papirus-icon-theme gnome-extensions-app arc-theme plank plank-docklets arc-theme-plank
+sudo dnf -y install wget curl vim rofi zsh htop gnome-tweaks util-linux-user papirus-icon-theme gnome-extensions-app plank plank-docklets
 
 printf "${yellow}>>>${nc} ${cyan}Applying theme...${nc}\n"
 gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
