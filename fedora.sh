@@ -15,15 +15,14 @@ sudo dnf -y install wget curl vim rofi zsh htop gnome-tweaks util-linux-user pap
 printf "${yellow}>>>${nc} ${cyan}Applying theme...${nc}\n"
 gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
 gsettings set org.gnome.desktop.interface icon-theme "Papirus"
-
-printf "${yellow}>>>${nc} ${cyan}Setting desktop and lockscreen background...${nc}\n"
 gsettings set org.gnome.desktop.background picture-uri file:///home/sarmad/Downloads/MyLinux/bg/fedora.jpg
 gsettings set org.gnome.desktop.screensaver picture-uri file:///home/sarmad/Downloads/MyLinux/bg/fedora.jpg
 
-printf "${yellow}>>>${nc} ${cyan}Installing Vundle.vim...${nc}\n"
+printf "${yellow}>>>${nc} ${cyan}Setting up Vim...${nc}\n"
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 cp ~/Downloads/MyLinux/dotfiles/vimrc ~/.vimrc
 vim +PluginInstall +qall
+sed -i '16,17s/^.//' ~/.vimrc
 
 printf "${yellow}>>>${nc} ${cyan}Installing powerline fonts...${nc}\n"
 git clone https://github.com/powerline/fonts.git ~/Downloads/PowerlineFonts
