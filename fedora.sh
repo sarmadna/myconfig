@@ -6,27 +6,27 @@ cyan='\033[1;36m'
 
 nc='\033[0m'
 
-echo "${yellow}>>>${nc} ${cyan}Starting post-installation script...${nc}"
+printf "${yellow}>>>${nc} ${cyan}Starting post-installation script...${nc}"
 
 sudo dnf -y install wget curl vim rofi zsh gnome-tweaks util-linux-user papirus-icon-theme gnome-extensions-app
 
 # sudo dnf -y install arc-theme plank plank-docklets arc-theme-plank
 
-echo "${yellow}>>>${nc} ${cyan}Applying dark theme...${nc}"
+printf "${yellow}>>>${nc} ${cyan}Applying dark theme...${nc}"
 
 gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
 
-echo "${yellow}>>>${nc} ${cyan}Changing icons theme...${nc}"
+printf "${yellow}>>>${nc} ${cyan}Changing icons theme...${nc}"
 
 gsettings set org.gnome.desktop.interface icon-theme "Papirus"
 
-echo "${yellow}>>>${nc} ${cyan}Setting desktop and lockscreen background...${nc}"
+printf "${yellow}>>>${nc} ${cyan}Setting desktop and lockscreen background...${nc}"
 
 gsettings set org.gnome.desktop.background picture-uri file:///home/sarmad/Downloads/MyLinux/bg/fedora.jpg
 
 gsettings set org.gnome.desktop.screensaver picture-uri file:///home/sarmad/Downloads/MyLinux/bg/fedora.jpg
 
-echo "${yellow}>>>${nc} ${cyan}Installing Vundle.vim...${nc}"
+printf "${yellow}>>>${nc} ${cyan}Installing Vundle.vim...${nc}"
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
@@ -34,13 +34,13 @@ cp ~/Downloads/MyLinux/dotfiles/vimrc ~/.vimrc
 
 vim +PluginInstall +qall
 
-echo "${yellow}>>>${nc} ${cyan}Installing powerline fonts...${nc}"
+printf "${yellow}>>>${nc} ${cyan}Installing powerline fonts...${nc}"
 
 git clone https://github.com/powerline/fonts.git ~/Downloads/PowerlineFonts
 
 sh ~/Downloads/PowerlineFonts/install.sh
 
-echo "${yellow}>>>${nc} ${cyan}Installing zsh and oh-my-zsh...${nc}"
+printf "${yellow}>>>${nc} ${cyan}Installing zsh and oh-my-zsh...${nc}"
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
