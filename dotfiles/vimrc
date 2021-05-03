@@ -1,7 +1,6 @@
 set nocompatible
 set backspace=2
 filetype off
-
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
@@ -9,10 +8,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
-
 call vundle#end()
 filetype plugin indent on
-
 set number
 syntax on
 set laststatus=2
@@ -20,4 +17,3 @@ set laststatus=2
 "let g:solarized_termtrans=1
 "let g:solarized_termcolors = 256
 "colorscheme solarized
-
