@@ -6,6 +6,7 @@ nc='\033[0m'
 
 printf "${yellow}>>>${nc} ${cyan}Starting post-installation script...${nc}\n"
 sudo timedatectl set-timezone Asia/Baghdad
+gsettings set org.gnome.desktop.interface clock-format "12h"
 sudo dnf -y install wget curl vim rofi zsh htop gnome-tweaks util-linux-user papirus-icon-theme gnome-extensions-app plank plank-docklets
 
 printf "${yellow}>>>${nc} ${cyan}Applying theme...${nc}\n"
@@ -13,7 +14,6 @@ gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
 gsettings set org.gnome.desktop.interface icon-theme "Papirus"
 gsettings set org.gnome.desktop.background picture-uri file:///home/sarmad/Downloads/MyLinux/bg/fedora.jpg
 gsettings set org.gnome.desktop.screensaver picture-uri file:///home/sarmad/Downloads/MyLinux/bg/fedora.jpg
-gsettings set org.gnome.desktop.interface clock-format "12h"
 gsettings set org.gnome.desktop.interface show-battery-percentage true
 gsettings set org.gnome.desktop.interface clock-show-date false
 gsettings set org.gnome.desktop.interface enable-hot-corners false
