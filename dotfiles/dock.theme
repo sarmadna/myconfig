@@ -1,6 +1,6 @@
 
 [PlankTheme]
-TopRoundness=12
+TopRoundness=0
 BottomRoundness=0
 LineWidth=1
 OuterStrokeColor=0;;0;;0;;255
@@ -12,6 +12,6 @@ HorizPadding=2
 TopPadding=2
 BottomPadding=2
 ItemPadding=3
-IndicatorSize=5
+IndicatorSize=7
 IconShadowSize=0
 CascadeHide=false
