@@ -7,6 +7,7 @@ nc='\033[0m'
 printf "${yellow}>>>${nc} ${cyan}Starting post-installation script...${nc}\n"
 sudo timedatectl set-timezone Asia/Baghdad
 gsettings set org.gnome.desktop.interface clock-format "12h"
+gsettings set org.gnome.desktop.interface clock-show-date false
 sudo dnf -y install wget curl vim rofi zsh htop gnome-tweaks util-linux-user papirus-icon-theme gnome-extensions-app plank plank-docklets
 
 printf "${yellow}>>>${nc} ${cyan}Applying theme...${nc}\n"
@@ -15,11 +16,10 @@ gsettings set org.gnome.desktop.interface icon-theme "Papirus"
 gsettings set org.gnome.desktop.background picture-uri file:///home/sarmad/Downloads/MyLinux/bg/fedora.jpg
 gsettings set org.gnome.desktop.screensaver picture-uri file:///home/sarmad/Downloads/MyLinux/bg/fedora.jpg
 gsettings set org.gnome.desktop.interface show-battery-percentage true
-gsettings set org.gnome.desktop.interface clock-show-date false
 gsettings set org.gnome.desktop.interface enable-hot-corners false
 gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
 gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true
-gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'ara'), ('xkb', 'iq+ku_ara')]"
+#gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'ara'), ('xkb', 'iq+ku_ara')]"
 
 printf "${yellow}>>>${nc} ${cyan}Installing powerline fonts...${nc}\n"
 git clone https://github.com/powerline/fonts.git ~/Downloads/PowerlineFonts
