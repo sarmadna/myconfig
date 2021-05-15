@@ -16,6 +16,6 @@ cp ~/Downloads/MyLinux/dotfiles/tmux.conf ~/.tmux.conf
 
 printf "${yellow}>>>${nc} ${cyan}Installing zsh and oh-my-zsh...${nc}\n"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-cp ~/Downloads/MyLinux/dotfiles/zshrc ~/.zshrc
+cp ~/Downloads/MyLinux/dotfiles/zshrc_server ~/.zshrc
 chsh -s $(which zsh)
 
