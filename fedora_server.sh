@@ -5,7 +5,7 @@ cyan='\033[1;36m'
 nc='\033[0m'
 
 printf "${yellow}>>>${nc} ${cyan}Starting post-installation script...${nc}\n"
-sudo dnf -y install wget curl vim zsh htop util-linux-user
+sudo dnf -y install wget curl vim zsh htop util-linux-user cups hplip samba
 
 printf "${yellow}>>>${nc} ${cyan}Setting up Vim...${nc}\n"
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
