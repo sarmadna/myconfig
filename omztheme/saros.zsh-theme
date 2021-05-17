@@ -15,10 +15,11 @@ function _return_status() {
 }
 
 function _user_host() {
-#    echo "%{$fg[green]%}%n@%m%{$reset_color%}"
+#    echo "%{$fg[green]%}[%n@%m]%{$reset_color%}"
 #    echo "%{$fg[green]%}❯❯❯"
-#    echo "%{$fg[green]%}>>>"
-    echo "%{$fg[green]%}#"
+    echo "%{$fg[green]%}❯"
+#    echo "%{$fg[green]%}>"
+#    echo "%{$fg[green]%}#"
 
 }
 
