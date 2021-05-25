@@ -8,7 +8,7 @@ printf "${yellow}>>>${nc} ${cyan}Starting post-installation script...${nc}\n"
 sudo timedatectl set-timezone Asia/Baghdad
 gsettings set org.gnome.desktop.interface clock-format "12h"
 gsettings set org.gnome.desktop.interface clock-show-date false
-sudo dnf -y install wget curl vim rofi zsh htop gnome-tweaks util-linux-user papirus-icon-theme gnome-extensions-app plank plank-docklets cava
+sudo dnf -y install wget curl vim zsh htop gnome-tweaks util-linux-user papirus-icon-theme gnome-extensions-app cava
 
 printf "${yellow}>>>${nc} ${cyan}Applying theme...${nc}\n"
 gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
@@ -19,9 +19,7 @@ gsettings set org.gnome.desktop.interface show-battery-percentage true
 gsettings set org.gnome.desktop.interface enable-hot-corners false
 gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
 gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true
-#gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'ara'), ('xkb', 'iq+ku_ara')]"
-sudo mkdir /usr/share/plank/themes/Saros
-sudo cp ~/Downloads/MyLinux/dotfiles/dock.theme /usr/share/plank/themes/Saros
+gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'ara'), ('xkb', 'iq+ku_ara')]"
 
 printf "${yellow}>>>${nc} ${cyan}Installing powerline fonts...${nc}\n"
 git clone https://github.com/powerline/fonts.git ~/Downloads/PowerlineFonts
