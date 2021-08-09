@@ -104,6 +104,7 @@ alias refresh="source ~/.zshrc"
 alias batcon="upower -i `upower -e | grep 'BAT'`"
 alias ls="ls -a --color"
 alias mon="tmux new-session 'htop' \; split-window 'cava'"
+alias port="sudo netstat -tulpn | grep LISTEN"
 LS_COLORS='di=36'
 export LS_COLORS
 
