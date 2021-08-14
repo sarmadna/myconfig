@@ -6,11 +6,18 @@ nc='\033[0m'
 
 printf "${yellow}>>>${nc} ${cyan}Starting post-installation script...${nc}\n"
 sudo timedatectl set-timezone Asia/Baghdad
-sudo dnf -y install wget curl vim zsh htop util-linux-user papirus-icon-theme cava arc-theme
+sudo dnf -y install wget curl vim zsh htop util-linux-user papirus-icon-theme cava arc-theme brightnessctl sway waybar 
 
 printf "${yellow}>>>${nc} ${cyan}Installing powerline fonts...${nc}\n"
 git clone https://github.com/powerline/fonts.git ~/Downloads/PowerlineFonts
 sh ~/Downloads/PowerlineFonts/install.sh
+
+printf "${yellow}>>>${nc} ${cyan}Configuring sway...${nc}\n"
+mkdir -p  ~/.config/sway
+cp ~/Downloads/MyLinux/dotfiles/swayconfig ~/.config/sway/config
+mkdir -p ~/.config/waybar
+cp ~/Downloads/MyLinux/dotfiles/waybarconfig ~/.config/waybar/config
+cp ~/Downloads/MyLinux/dotfiles/waybarstyle.css ~/.config/waybar/style.css
 
 printf "${yellow}>>>${nc} ${cyan}Setting up Vim...${nc}\n"
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
