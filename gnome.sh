@@ -16,7 +16,7 @@ gsettings set org.gnome.desktop.background picture-uri ""
 gsettings set org.gnome.desktop.background primary-color '#073642' 
 gsettings set org.gnome.desktop.screensaver picture-uri ""
 gsettings set org.gnome.desktop.screensaver primary-color '#073642'
-gsettings set org.gnome.desktop.interface show-battery-percentage true
+gsettings set org.gnome.desktop.interface show-battery-percentage false
 gsettings set org.gnome.desktop.interface enable-hot-corners false
 gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
 gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true
