@@ -11,7 +11,7 @@ The script files handle post-installation tasks and install the apps that I woul
 * Install terminal apps `curl` `vim` `zsh` etc.
 * Install GUI apps `libreoffice` `vlc`
 * Install GUI tweaks
-* Get `vundle`
+* Setup vim and vundle
 * Get Powerline fonts
 * Copy dotfiles to home directory
 * Install oh-my-zsh
@@ -32,14 +32,9 @@ git clone https://github.com/sarmadna/mylinux.git ~/Downloads/MyLinux
 
 Then navigate to `MyLinux` folder and run the script.
 
-For Fedora;
+For Fedora, navigate to `fedora` folder and then execute the script;
 ~~~
-sh fedora.sh
-~~~
-
-For Ubuntu;
-~~~
-sh ubuntu.sh
+sh gnome.sh
 ~~~
 
 ### Rofi Configuration
