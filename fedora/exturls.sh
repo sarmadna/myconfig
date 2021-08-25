@@ -10,4 +10,5 @@ xdg-open https://extensions.gnome.org/extension/708/panel-osd/
 xdg-open https://extensions.gnome.org/extension/7/removable-drive-menu/
 xdg-open https://extensions.gnome.org/extension/3733/tiling-assistant/
 xdg-open https://extensions.gnome.org/extension/2890/tray-icons-reloaded/
+xdg-open https://extensions.gnome.org/extension/4099/no-overview/
 
