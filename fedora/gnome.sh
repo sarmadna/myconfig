@@ -7,15 +7,17 @@ nc='\033[0m'
 printf "${yellow}>>>${nc} ${cyan}Starting post-installation script...${nc}\n"
 sudo timedatectl set-timezone Asia/Baghdad
 gsettings set org.gnome.desktop.interface clock-format "12h"
-sudo dnf -y install wget curl vim zsh htop gnome-tweaks util-linux-user papirus-icon-theme gnome-extensions-app cava arc-theme ranger calcurse tlp geary
+sudo dnf -y install wget curl vim zsh htop gnome-tweaks util-linux-user papirus-icon-theme gnome-extensions-app cava arc-theme ranger geary
+sudo dnf -y install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf -y install https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 printf "${yellow}>>>${nc} ${cyan}Applying theme...${nc}\n"
 gsettings set org.gnome.desktop.interface gtk-theme "Arc-Dark-solid"
 gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
-gsettings set org.gnome.desktop.background picture-uri "" 
-gsettings set org.gnome.desktop.background primary-color '#073642' 
-gsettings set org.gnome.desktop.screensaver picture-uri ""
-gsettings set org.gnome.desktop.screensaver primary-color '#073642'
+gsettings set org.gnome.desktop.background picture-uri file://$HOME/Downloads/MyLinux/bg/minimalist01.jpg
+gsettings set org.gnome.desktop.background picture-options "stretched"
+gsettings set org.gnome.desktop.screensaver picture-uri file://$HOME/Downloads/MyLinux/bg/minimalist01.jpg
+gsettings set org.gnome.desktop.screensaver picture-options "stretched"
 gsettings set org.gnome.desktop.interface show-battery-percentage false
 gsettings set org.gnome.desktop.interface enable-hot-corners false
 gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
