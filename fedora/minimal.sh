@@ -5,7 +5,7 @@ cyan='\033[1;36m'
 nc='\033[0m'
 
 printf "${yellow}>>>${nc} ${cyan}Starting post-installation script...${nc}\n"
-sudo dnf -y install wget curl vim zsh htop util-linux-user ranger mc calcurse NetworkManager-wifi NetworkManager-tui upower sqlite brightnessctl cmatrix neofetch sway waybar xdg-desktop-portal-wlr pulseaudio-utils net-tools
+sudo dnf -y install wget curl vim zsh htop util-linux-user ranger mc calcurse NetworkManager-wifi NetworkManager-tui upower sqlite brightnessctl cmatrix neofetch sway waybar xdg-desktop-portal-wlr pulseaudio-utils net-tools powertop evince libreoffice chromium
 sudo dnf -y install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf -y install https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf -y install akmod-wl
