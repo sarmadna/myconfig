@@ -7,9 +7,7 @@ nc='\033[0m'
 printf "${yellow}>>>${nc} ${cyan}Starting post-installation script...${nc}\n"
 sudo timedatectl set-timezone Asia/Baghdad
 gsettings set org.gnome.desktop.interface clock-format "12h"
-sudo dnf -y install wget curl vim zsh htop gnome-tweaks util-linux-user papirus-icon-theme gnome-extensions-app arc-theme ranger mc calcurse NetworkManager-wifi NetworkManager-tui brightnessctl pulseaudio-utils powertop sway waybar cmatrix neofetch
-sudo dnf -y install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
-sudo dnf -y install https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf -y install wget curl vim zsh htop gnome-tweaks util-linux-user papirus-icon-theme gnome-extensions-app arc-theme ranger mc calcurse NetworkManager-wifi NetworkManager-tui brightnessctl pulseaudio-utils powertop sway swaylock waybar cmatrix neofetch https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 mkdir -p $HOME/.config/sway
 cp $HOME/Downloads/MyLinux/dotfiles/config/sway/config $HOME/.config/sway/
 mkdir -
@@ -50,6 +48,6 @@ printf "${yellow}>>>${nc} ${cyan}Installing zsh and oh-my-zsh...${nc}\n"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 cp ~/Downloads/MyLinux/dotfiles/zshrc ~/.zshrc
 cp ~/Downloads/MyLinux/omztheme/saros.zsh-theme ~/.oh-my-zsh/themes/
-git clone https://github.com/joepvd/tty-solarized ~/.oh-my-zsh/custom/plugins/
+git clone https://github.com/joepvd/tty-solarized ~/.oh-my-zsh/custom/plugins/tty-solarized
 chsh -s $(which zsh)
 
