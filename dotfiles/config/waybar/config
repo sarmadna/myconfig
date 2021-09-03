@@ -10,6 +10,10 @@
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
+    "sway/language": {
+        "format": "KBD | {}",
+        "tooltip-format": "{long}",
+    },
     "clock": {
         "format": "{:%I:%M %p}"
         //"format": "{:%b %d  %I:%M %p}"

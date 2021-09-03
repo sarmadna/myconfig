@@ -39,7 +39,7 @@ window#waybar {
 }
 
 #workspaces button.urgent {
-    background-color: #eb4d4b;
+    background-color: #d70000;
 }
 
 #mode {
@@ -90,7 +90,7 @@ window#waybar {
 }
 
 #battery.warning:not(.charging) {
-    background-color: #d70000;
+    background-color: #af8700;
     color: #ffffff;
     padding: 0 5px;
 }
