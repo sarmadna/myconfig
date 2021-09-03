@@ -6,12 +6,12 @@
 
 ### Variables
 # Borders
-default_border pixel 5
+default_border pixel 1
 # Fonts
 font pango: Cantarell Regular 12
 #Gaps
-gaps inner 10
-gaps outer 5
+#gaps inner 10
+#gaps outer 5
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
 # Home row direction keys, like vim
@@ -20,19 +20,19 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term alacritty
+set $term kitty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-# set $menu dmenu_path | dmenu | xargs swaymsg exec --
-set $menu wofi --show run --lines 7 --gtk-dark | xargs swaymsg exec --
+set $menu dmenu_path | dmenu -b -fn 'Cantarell-13' | xargs swaymsg exec --
+#set $menu wofi --show run --lines 7 --gtk-dark | xargs swaymsg exec --
 
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 #output * bg /usr/share/backgrounds/default.png fill
 #output * bg $HOME/Downloads/MyLinux/bg/elcapitan.jpg fill
-output * bg #333333 solid_color
+output * bg #000000 solid_color
 #
 # Example configuration:
 #
@@ -80,7 +80,7 @@ output * bg #333333 solid_color
     bindsym $mod+d exec $menu
 
     # Lock screen
-    bindsym $mod+escape exec swaylock -f -c 333333
+    bindsym $mod+escape exec swaylock -f -c 000000
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -231,6 +231,6 @@ bar {
 #
 #
 # class                 border  backgr. text    indicator child_border
-client.focused          #000000 #000000 #ffffff #000000   #000000
-client.focused_inactive #333333 #333333 #ffffff #333333   #333333
-client.unfocused        #333333 #333333 #ffffff #333333   #333333
+client.focused          #333333 #333333 #ffffff #333333   #333333
+client.focused_inactive #000000 #000000 #ffffff #000000   #000000
+client.unfocused        #000000 #000000 #ffffff #000000   #000000
