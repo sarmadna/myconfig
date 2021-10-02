@@ -7,14 +7,7 @@ nc='\033[0m'
 printf "${yellow}>>>${nc} ${cyan}Starting post-installation script...${nc}\n"
 sudo timedatectl set-timezone Asia/Baghdad
 gsettings set org.gnome.desktop.interface clock-format "12h"
-sudo dnf -y install wget curl vim zsh htop gnome-tweaks util-linux-user papirus-icon-theme gnome-extensions-app arc-theme ranger mc calcurse NetworkManager-wifi NetworkManager-tui brightnessctl pulseaudio-utils powertop sway swaylock waybar cmatrix neofetch https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-mkdir -p $HOME/.config/sway
-cp $HOME/Downloads/MyLinux/dotfiles/config/sway/config $HOME/.config/sway/
-mkdir -
-mkdir -p $HOME/.config/waybar
-cp $HOME/Downloads/MyLinux/dotfiles/config/waybar/* $HOME/.config/waybar/
-mkdir -p $HOME/.config/alacritty
-cp $HOME/Downloads/MyLinux/dotfiles/config/alacritty/* $HOME/.config/alacritty/
+sudo dnf -y install wget curl vim zsh htop gnome-tweaks util-linux-user papirus-icon-theme gnome-extensions-app arc-theme cmatrix neofetch https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 printf "${yellow}>>>${nc} ${cyan}Applying theme...${nc}\n"
 gsettings set org.gnome.desktop.interface gtk-theme "Arc-Dark-solid"
@@ -23,7 +16,6 @@ gsettings set org.gnome.desktop.background picture-uri file://$HOME/Downloads/My
 gsettings set org.gnome.desktop.background picture-options "stretched"
 gsettings set org.gnome.desktop.screensaver picture-uri file://$HOME/Downloads/MyLinux/bg/minimalist01.jpg
 gsettings set org.gnome.desktop.screensaver picture-options "stretched"
-gsettings set org.gnome.desktop.interface show-battery-percentage false
 gsettings set org.gnome.desktop.interface enable-hot-corners false
 gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
 gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true
@@ -32,7 +24,6 @@ gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', '
 printf "${yellow}>>>${nc} ${cyan}Installing powerline fonts...${nc}\n"
 git clone https://github.com/powerline/fonts.git ~/Downloads/PowerlineFonts
 sh ~/Downloads/PowerlineFonts/install.sh
-gsettings set org.gnome.desktop.interface monospace-font-name "DejaVu Sans Mono Book 11"
 sudo cp $HOME/Downloads/PowerlineFonts/Terminus/PSF/*.gz /usr/lib/kbd/consolefonts/
 sudo mv /etc/vconsole.conf /etc/vconsole.conf.old
 sudo cp ~/Downloads/MyLinux/dotfiles/vconsole.conf /etc/vconsole.conf
