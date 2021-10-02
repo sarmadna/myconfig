@@ -6,8 +6,7 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-
+Plugin 'vim-airline/vim-airline'
 call vundle#end()
 filetype plugin indent on
 set number
