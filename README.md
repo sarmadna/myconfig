@@ -45,4 +45,3 @@ Add the following line
 ~~~
 rofi -show drun -show-icons -lines 10 -font "Cantarell Regular 11"
 ~~~
-
