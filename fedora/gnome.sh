@@ -10,8 +10,13 @@ gsettings set org.gnome.desktop.interface clock-format "12h"
 sudo dnf -y install wget curl vim zsh htop gnome-tweaks util-linux-user papirus-icon-theme gnome-extensions-app arc-theme cmatrix neofetch https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 printf "${yellow}>>>${nc} ${cyan}Applying theme...${nc}\n"
-gsettings set org.gnome.desktop.interface gtk-theme "Arc-Dark-solid"
-gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
+git clone https://github.com/vinceliuice/Qogir-theme.git $HOME/Downloads/Qogir-theme
+sudo sh $HOME/Downloads/Qogir-theme/install.sh -d /usr/share/themes -l fedora
+git clone https://github.com/vinceliuice/Qogir-icon-theme.git $HOME/Downloads/Qogir-icon-theme
+sh $HOME/Downloads/Qogir-icon-theme/install.sh
+gsettings set org.gnome.desktop.interface gtk-theme "Qogir-Dark"
+gsettings set org.gnome.desktop.interface icon-theme "Qogir-Dark"
+gsettings set org.gnome.desktop.interface cursor-theme "Qogir"
 gsettings set org.gnome.desktop.background picture-uri file://$HOME/Downloads/MyLinux/bg/minimalist01.jpg
 gsettings set org.gnome.desktop.background picture-options "stretched"
 gsettings set org.gnome.desktop.screensaver picture-uri file://$HOME/Downloads/MyLinux/bg/minimalist01.jpg
@@ -22,23 +27,23 @@ gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'ara'), ('xkb', 'iq+ku_ara')]"
 
 printf "${yellow}>>>${nc} ${cyan}Installing powerline fonts...${nc}\n"
-git clone https://github.com/powerline/fonts.git ~/Downloads/PowerlineFonts
-sh ~/Downloads/PowerlineFonts/install.sh
+git clone https://github.com/powerline/fonts.git $HOME/Downloads/PowerlineFonts
+sh $HOME/Downloads/PowerlineFonts/install.sh
 sudo cp $HOME/Downloads/PowerlineFonts/Terminus/PSF/*.gz /usr/lib/kbd/consolefonts/
 sudo mv /etc/vconsole.conf /etc/vconsole.conf.old
-sudo cp ~/Downloads/MyLinux/dotfiles/vconsole.conf /etc/vconsole.conf
+sudo cp $HOME/Downloads/MyLinux/dotfiles/vconsole.conf /etc/vconsole.conf
 
 printf "${yellow}>>>${nc} ${cyan}Setting up Vim...${nc}\n"
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-cp ~/Downloads/MyLinux/dotfiles/vimrc ~/.vimrc
+git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
+cp $HOME/Downloads/MyLinux/dotfiles/vimrc $HOME/.vimrc
 vim +PluginInstall +qall
 #sed -i '16,17s/^.//' ~/.vimrc
-cp ~/Downloads/MyLinux/dotfiles/tmux.conf ~/.tmux.conf
+cp $HOME/Downloads/MyLinux/dotfiles/tmux.conf $HOME/.tmux.conf
 
 printf "${yellow}>>>${nc} ${cyan}Installing zsh and oh-my-zsh...${nc}\n"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-cp ~/Downloads/MyLinux/dotfiles/zshrc ~/.zshrc
-cp ~/Downloads/MyLinux/omztheme/saros.zsh-theme ~/.oh-my-zsh/themes/
-git clone https://github.com/joepvd/tty-solarized ~/.oh-my-zsh/custom/plugins/tty-solarized
+cp $HOME/Downloads/MyLinux/dotfiles/zshrc $HOME/.zshrc
+cp $HOME/Downloads/MyLinux/omztheme/saros.zsh-theme $HOME~/.oh-my-zsh/themes/
+git clone https://github.com/joepvd/tty-solarized $HOME/.oh-my-zsh/custom/plugins/tty-solarized
 chsh -s $(which zsh)
 
