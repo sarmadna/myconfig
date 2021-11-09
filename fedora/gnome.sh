@@ -14,8 +14,8 @@ git clone https://github.com/vinceliuice/Qogir-theme.git $HOME/Downloads/Qogir-t
 sudo sh $HOME/Downloads/Qogir-theme/install.sh -d /usr/share/themes -l fedora
 git clone https://github.com/vinceliuice/Qogir-icon-theme.git $HOME/Downloads/Qogir-icon-theme
 sh $HOME/Downloads/Qogir-icon-theme/install.sh
-gsettings set org.gnome.desktop.interface gtk-theme "Qogir-Dark"
-gsettings set org.gnome.desktop.interface icon-theme "Qogir-Dark"
+gsettings set org.gnome.desktop.interface gtk-theme "Qogir-dark"
+gsettings set org.gnome.desktop.interface icon-theme "Qogir-dark"
 gsettings set org.gnome.desktop.background picture-uri file://$HOME/Downloads/MyLinux/bg/minimalist01.jpg
 gsettings set org.gnome.desktop.background picture-options "stretched"
 gsettings set org.gnome.desktop.screensaver picture-uri file://$HOME/Downloads/MyLinux/bg/minimalist01.jpg
