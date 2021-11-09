@@ -16,7 +16,6 @@ git clone https://github.com/vinceliuice/Qogir-icon-theme.git $HOME/Downloads/Qo
 sh $HOME/Downloads/Qogir-icon-theme/install.sh
 gsettings set org.gnome.desktop.interface gtk-theme "Qogir-Dark"
 gsettings set org.gnome.desktop.interface icon-theme "Qogir-Dark"
-gsettings set org.gnome.desktop.interface cursor-theme "Qogir"
 gsettings set org.gnome.desktop.background picture-uri file://$HOME/Downloads/MyLinux/bg/minimalist01.jpg
 gsettings set org.gnome.desktop.background picture-options "stretched"
 gsettings set org.gnome.desktop.screensaver picture-uri file://$HOME/Downloads/MyLinux/bg/minimalist01.jpg
@@ -43,7 +42,7 @@ cp $HOME/Downloads/MyLinux/dotfiles/tmux.conf $HOME/.tmux.conf
 printf "${yellow}>>>${nc} ${cyan}Installing zsh and oh-my-zsh...${nc}\n"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 cp $HOME/Downloads/MyLinux/dotfiles/zshrc $HOME/.zshrc
-cp $HOME/Downloads/MyLinux/omztheme/saros.zsh-theme $HOME~/.oh-my-zsh/themes/
+cp $HOME/Downloads/MyLinux/omztheme/saros.zsh-theme $HOME/.oh-my-zsh/themes/
 git clone https://github.com/joepvd/tty-solarized $HOME/.oh-my-zsh/custom/plugins/tty-solarized
 chsh -s $(which zsh)
 
