@@ -64,7 +64,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git tty-solarized)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -105,7 +105,7 @@ alias batcon="upower -i `upower -e | grep 'BAT'`"
 alias ls="ls --color"
 alias mon="tmux new-session 'htop' \; split-window 'cava'"
 alias ports="sudo netstat -tulpn | grep LISTEN"
-alias update="sudo dnf -y upgrade --refresh"
+alias update="sudo dnf -y upgrade --refresh && sudo dnf -y autoremove"
 LS_COLORS='di=36'
 export LS_COLORS
 
