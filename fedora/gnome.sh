@@ -48,7 +48,6 @@ chsh -s $(which zsh)
 printf "${yellow}>>>${nc} ${cyan}Loading gnome-shell extensions...${nc}\n"
 xdg-open https://extensions.gnome.org/extension/307/dash-to-dock/
 xdg-open https://extensions.gnome.org/extension/36/lock-keys/
-xdg-open https://extensions.gnome.org/extension/708/panel-osd/
 xdg-open https://extensions.gnome.org/extension/7/removable-drive-menu/
 xdg-open https://extensions.gnome.org/extension/517/caffeine/
-xdg-open https://extensions.gnome.org/extension/355/status-area-horizontal-spacing/
+xdg-open https://extensions.gnome.org/extension/4085/big-sur-status-area/
