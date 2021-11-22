@@ -50,8 +50,8 @@ xdg-open https://extensions.gnome.org/extension/307/dash-to-dock/
 xdg-open https://extensions.gnome.org/extension/36/lock-keys/
 xdg-open https://extensions.gnome.org/extension/7/removable-drive-menu/
 xdg-open https://extensions.gnome.org/extension/517/caffeine/
-xdg-open https://extensions.gnome.org/extension/4085/big-sur-status-area/
 xdg-open https://extensions.gnome.org/extension/4451/logo-menu/
 xdg-open https://extensions.gnome.org/extension/4099/no-overview/
 xdg-open https://extensions.gnome.org/extension/19/user-themes/
-
+xdg-open https://extensions.gnome.org/extension/615/appindicator-support/
+https://extensions.gnome.org/extension/1108/add-username-to-top-panel/
