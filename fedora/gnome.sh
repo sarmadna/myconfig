@@ -54,4 +54,4 @@ xdg-open https://extensions.gnome.org/extension/4451/logo-menu/
 xdg-open https://extensions.gnome.org/extension/4099/no-overview/
 xdg-open https://extensions.gnome.org/extension/19/user-themes/
 xdg-open https://extensions.gnome.org/extension/615/appindicator-support/
-https://extensions.gnome.org/extension/1108/add-username-to-top-panel/
+xdg-open https://extensions.gnome.org/extension/1108/add-username-to-top-panel/
