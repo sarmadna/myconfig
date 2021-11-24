@@ -6,7 +6,7 @@ nc='\033[0m'
 
 printf "${yellow}>>>${nc} ${cyan}Starting post-installation script...${nc}\n"
 sudo timedatectl set-timezone Asia/Baghdad
-sudo dnf -y install wget curl vim zsh htop util-linux-user xorg-x11-server-common xorg-x11-xinit xorg-x11-xinit-session xrandr xsetroot i3 st cmatrix neofetch https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf -y install wget curl vim zsh htop util-linux-user xorg-x11-server-Xorg xorg-x11-xinit xrandr xsetroot xrdb i3 polybar cmatrix neofetch https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 printf "${yellow}>>>${nc} ${cyan}Installing powerline fonts...${nc}\n"
 git clone https://github.com/powerline/fonts.git $HOME/Downloads/PowerlineFonts
