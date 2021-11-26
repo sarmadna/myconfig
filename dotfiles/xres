@@ -1,3 +1,3 @@
-# include "/home/sarmad/Xresources-themes/base16-google-dark-256.Xresources"
+# include "/home/sarmad/Downloads/MyLinux/xthemes/base16-google-dark-256.Xresources"
 URxvt.scrollBar: false
 URxvt*font: xft:DejaVu Sans Mono for Powerline:size=10:style=Book
