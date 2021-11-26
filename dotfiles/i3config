@@ -185,5 +185,6 @@ bindsym $mod+r mode "resize"
 #        status_command i3status
 #}
 default_border pixel 3
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec_always --no-startup-id xrdb ~/.Xresources
+exec --no-startup-id $HOME/.config/polybar/launch.sh
+exec --no-startup-id feh --bg-fill $HOME/Downloads/MyLinux/bg/minimalist01.jpg
+exec --no-startup-id picom
