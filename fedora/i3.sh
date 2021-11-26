@@ -10,10 +10,12 @@ sudo dnf -y install wget curl vim zsh htop util-linux-user feh polybar picom cma
 
 printf "${yellow}>>>${nc} ${cyan}Configuring i3...${nc}\n"
 cp $HOME/Downloads/MyLinux/dotfiles/xres $HOME/.Xresources
+xrdb $HOME/.Xresources
 cp $HOME/Downloads/MyLinux/dotfiles/i3config $HOME/.config/i3/config
 mkdir $HOME/.config/polybar
 cp $HOME/Downloads/MyLinux/dotfiles/pbconfig $HOME/.config/polybar/config
 cp $HOME/Downloads/MyLinux/dotfiles/pblaunch.sh $HOME/.config/polybar/launch.sh
+chmod +x $HOME/.config/polybar/launch.sh
 
 printf "${yellow}>>>${nc} ${cyan}Installing powerline fonts...${nc}\n"
 git clone https://github.com/powerline/fonts.git $HOME/Downloads/PowerlineFonts
@@ -34,3 +36,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 cp $HOME/Downloads/MyLinux/dotfiles/zshrc $HOME/.zshrc
 cp $HOME/Downloads/MyLinux/omztheme/saros.zsh-theme $HOME/.oh-my-zsh/themes/
 chsh -s $(which zsh)
+
+printf "${yellow}>>>${nc} ${cyan}Rebooting in...${nc}\n"
+for i in {5..1}
+do
+  echo $i
+  sleep 1
+done
+reboot
