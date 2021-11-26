@@ -183,6 +183,5 @@ bindsym $mod+r mode "resize"
 #}
 default_border pixel 3
 exec --no-startup-id $HOME/.config/polybar/launch.sh
-exec --no-startup-id xrandr --output Virtual-1 --mode 1920x1080
 exec --no-startup-id feh --bg-scale ~/Downloads/MyLinux/bg/minimalist01.jpg
 exec --no-startup-id picom
