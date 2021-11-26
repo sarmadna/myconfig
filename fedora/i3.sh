@@ -16,6 +16,8 @@ mkdir $HOME/.config/polybar
 cp $HOME/Downloads/MyLinux/dotfiles/pbconfig $HOME/.config/polybar/config
 cp $HOME/Downloads/MyLinux/dotfiles/pblaunch.sh $HOME/.config/polybar/launch.sh
 chmod +x $HOME/.config/polybar/launch.sh
+git clone https://github.com/stark/siji.git $HOME/Downloads/Siji
+sh $HOME/Downloads/Siji/install.sh
 
 printf "${yellow}>>>${nc} ${cyan}Installing powerline fonts...${nc}\n"
 git clone https://github.com/powerline/fonts.git $HOME/Downloads/PowerlineFonts
