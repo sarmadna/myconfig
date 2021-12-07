@@ -41,7 +41,7 @@ cp $HOME/Downloads/MyLinux/dotfiles/zshrc $HOME/.zshrc
 cp $HOME/Downloads/MyLinux/omztheme/saros.zsh-theme $HOME/.oh-my-zsh/themes/
 chsh -s $(which zsh)
 
-echo "if [[ ! ${DISPLAY} && ${XDG_VTNR} == 1 ]]; then" >> $HOME/.zshrc
+echo "if [[ ! \${DISPLAY} && \${XDG_VTNR} == 1 ]]; then" >> $HOME/.zshrc
 echo "    exec startx" >> $HOME/.zshrc
 echo "fi" >> $HOME/.zshrc
 
