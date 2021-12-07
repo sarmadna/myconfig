@@ -183,3 +183,5 @@ bindsym $mod+r mode "resize"
 #}
 default_border pixel 3
 exec --no-startup-id $HOME/.config/polybar/launch.sh
+gaps inner 10
+gaps outer 5
