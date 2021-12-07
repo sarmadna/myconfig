@@ -183,5 +183,3 @@ bindsym $mod+r mode "resize"
 #}
 default_border pixel 3
 exec --no-startup-id $HOME/.config/polybar/launch.sh
-exec --no-startup-id feh --bg-scale ~/Downloads/MyLinux/bg/minimalist01.jpg
-exec --no-startup-id picom
