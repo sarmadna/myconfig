@@ -6,13 +6,17 @@ nc='\033[0m'
 
 printf "${yellow}>>>${nc} ${cyan}Starting post-installation script...${nc}\n"
 sudo timedatectl set-timezone Asia/Baghdad
-sudo dnf -y install wget curl vim zsh htop util-linux-user cmatrix neofetch https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm fedora-workstation-repositories
+sudo dnf -y install wget curl vim zsh htop util-linux-user cmatrix neofetch
+sudo dnf -y install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf -y install https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm fedora-workstation-repositories
 sudo dnf config-manager --set-enabled google-chrome
-sudo dnf install google-chrome-stable
 
 printf "${yellow}>>>${nc} ${cyan}Applying theme...${nc}\n"
-git clone https://github.com/vinceliuice/Qogir-icon-theme.git $HOME/Downloads/Qogir-icon-theme
+git clone https://github.com/vinceliuice/Qogir-icon-theme.git $HOME/Downloads/
 sh $HOME/Downloads/Qogir-icon-theme/install.sh
+mkdir -p $HOME/.local/share/plasma/plasmoids
+git clone https://github.com/vinceliuice/Qogir-kde.git $HOME/Downloads/
+sh $HOME/Downloads/Qogir-kde/install.sh
 
 printf "${yellow}>>>${nc} ${cyan}Installing powerline fonts...${nc}\n"
 git clone https://github.com/powerline/fonts.git $HOME/Downloads/PowerlineFonts
