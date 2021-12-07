@@ -21,6 +21,7 @@ sudo cp $HOME/Downloads/MyLinux/dotfiles/vconsole.conf /etc/vconsole.conf
 printf "${yellow}>>>${nc} ${cyan}Configuring i3...${nc}\n"
 cp $HOME/Downloads/MyLinux/dotfiles/Xresources $HOME/.Xresources
 cp $HOME/Downloads/MyLinux/dotfiles/xinitrc $HOME/.xinitrc
+mkdir -p $HOME/.config/i3
 cp $HOME/Downloads/MyLinux/dotfiles/i3/config $HOME/.config/i3/config
 mkdir $HOME/.config/polybar
 cp $HOME/Downloads/MyLinux/dotfiles/polybar/config $HOME/.config/polybar/config
@@ -40,9 +41,9 @@ cp $HOME/Downloads/MyLinux/dotfiles/zshrc $HOME/.zshrc
 cp $HOME/Downloads/MyLinux/omztheme/saros.zsh-theme $HOME/.oh-my-zsh/themes/
 chsh -s $(which zsh)
 
-echo "if [[ ! ${DISPLAY} && ${XDG_VTNR} == 8 ]]; then" > $HOME/.zshrc
-echo "    exec startx" > $HOME/.zshrc
-echo "fi" > $HOME/.zshrc
+echo "if [[ ! ${DISPLAY} && ${XDG_VTNR} == 1 ]]; then" >> $HOME/.zshrc
+echo "    exec startx" >> $HOME/.zshrc
+echo "fi" >> $HOME/.zshrc
 
 printf "${yellow}>>>${nc} ${cyan}Rebooting in...${nc}\n"
 for i in {5..1}
