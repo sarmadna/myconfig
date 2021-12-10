@@ -12,10 +12,10 @@ sudo dnf -y install https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfr
 sudo dnf config-manager --set-enabled google-chrome
 
 printf "${yellow}>>>${nc} ${cyan}Applying theme...${nc}\n"
-git clone https://github.com/vinceliuice/Qogir-icon-theme.git $HOME/Downloads/
+git clone https://github.com/vinceliuice/Qogir-icon-theme.git $HOME/Downloads/Qogir-icon-theme
 sh $HOME/Downloads/Qogir-icon-theme/install.sh
 mkdir -p $HOME/.local/share/plasma/plasmoids
-git clone https://github.com/vinceliuice/Qogir-kde.git $HOME/Downloads/
+git clone https://github.com/vinceliuice/Qogir-kde.git $HOME/Downloads/Qogir-kde
 sh $HOME/Downloads/Qogir-kde/install.sh
 
 printf "${yellow}>>>${nc} ${cyan}Installing powerline fonts...${nc}\n"
