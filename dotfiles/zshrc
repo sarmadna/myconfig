@@ -99,7 +99,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 alias zcon="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
-alias py="python3"
 alias refresh="source ~/.zshrc"
 alias batcon="upower -i `upower -e | grep 'BAT'`"
 alias ls="ls --color"
