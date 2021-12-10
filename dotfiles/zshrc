@@ -106,6 +106,6 @@ alias mon="tmux new-session 'htop' \; split-window 'cava'"
 alias ports="sudo netstat -tulpn | grep LISTEN"
 alias update="sudo dnf -y upgrade --refresh && sudo dnf -y autoremove"
 alias gaac="git add --all && git commit -m 'update'"
-LS_COLORS='di=36'
+LS_COLORS='di=34'
 export LS_COLORS
 
