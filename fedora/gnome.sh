@@ -48,7 +48,7 @@ cp $HOME/Downloads/MyLinux/dotfiles/zshrc $HOME/.zshrc
 cp $HOME/Downloads/MyLinux/omztheme/saros.zsh-theme $HOME/.oh-my-zsh/themes/
 chsh -s $(which zsh)
 
-printf "${yellow}>>>${nc} ${cyan}Loading gnome-shell extensions...${nc}\n"
+printf "${yellow}>>>${nc} ${cyan}Loading gnome-shell extensions page...${nc}\n"
 xdg-open https://extensions.gnome.org/extension/307/dash-to-dock/
 xdg-open https://extensions.gnome.org/extension/36/lock-keys/
 xdg-open https://extensions.gnome.org/extension/7/removable-drive-menu/
