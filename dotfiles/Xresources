@@ -1,3 +1,4 @@
 # include "/home/sarmad/Downloads/MyLinux/xthemes/base16-google-dark-256.Xresources"
 URxvt.scrollBar: false
 URxvt*font: xft:Terminess Powerline:size=12:style=Regular
+URxvt*geometry: 100x30
