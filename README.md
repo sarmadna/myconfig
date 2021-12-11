@@ -8,7 +8,7 @@ The script files handle post-installation tasks and install the apps that I woul
 
 ## Linux post-installation tasks
 
-* Install terminal apps `curl` `vim` `zsh` etc.
+* Install terminal apps `vim` `zsh` etc.
 * Install GUI apps `libreoffice` `vlc`
 * Install GUI tweaks
 * Setup vim and vundle
