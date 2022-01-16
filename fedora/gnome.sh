@@ -7,7 +7,7 @@ nc='\033[0m'
 printf "${yellow}>>>${nc} ${cyan}Starting post-installation script...${nc}\n"
 sudo timedatectl set-timezone Asia/Baghdad
 gsettings set org.gnome.desktop.interface clock-format "12h"
-sudo dnf -y install wget curl vim zsh htop util-linux-user cmatrix neofetch gnome-tweaks gnome-extensions-app rxvt-unicode
+sudo dnf -y install wget curl vim zsh htop util-linux-user cmatrix neofetch cava gnome-tweaks gnome-extensions-app rxvt-unicode
 sudo dnf -y install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf -y install https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
