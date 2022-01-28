@@ -19,12 +19,13 @@ sudo dnf install google-chrome-stable telegram-desktop
 #git clone https://github.com/vinceliuice/Qogir-kde.git $HOME/Downloads/Qogir-kde
 #sh $HOME/Downloads/Qogir-kde/install.sh
 
-printf "${yellow}>>>${nc} ${cyan}Installing powerline fonts...${nc}\n"
+printf "${yellow}>>>${nc} ${cyan}Installing fonts...${nc}\n"
 git clone https://github.com/powerline/fonts.git $HOME/Downloads/PowerlineFonts
 sh $HOME/Downloads/PowerlineFonts/install.sh
 sudo cp $HOME/Downloads/PowerlineFonts/Terminus/PSF/*.gz /usr/lib/kbd/consolefonts/
 sudo mv /etc/vconsole.conf /etc/vconsole.conf.old
 sudo cp $HOME/Downloads/MyLinux/dotfiles/vconsole.conf /etc/vconsole.conf
+sudo dnf -y install pt-sans-fonts google-noto-kufi-arabic-fonts google-noto-sans-arabic-fonts
 
 printf "${yellow}>>>${nc} ${cyan}Setting up Vim...${nc}\n"
 git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
