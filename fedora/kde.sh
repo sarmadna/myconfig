@@ -10,7 +10,6 @@ sudo dnf -y install wget curl vim zsh htop latte-dock util-linux-user cmatrix ne
 sudo dnf -y install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf -y install https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf config-manager --set-enabled google-chrome
-sudo dnf install google-chrome-stable telegram-desktop
 
 #printf "${yellow}>>>${nc} ${cyan}Applying theme...${nc}\n"
 #git clone https://github.com/vinceliuice/Qogir-icon-theme.git $HOME/Downloads/Qogir-icon-theme
