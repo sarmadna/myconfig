@@ -7,7 +7,7 @@ nc='\033[0m'
 printf "${yellow}>>>${nc} ${cyan}Starting post-installation script...${nc}\n"
 sudo timedatectl set-timezone Asia/Baghdad
 gsettings set org.gnome.desktop.interface clock-format "12h"
-sudo dnf -y install wget curl vim zsh htop util-linux-user cmatrix neofetch cava gnome-tweaks gnome-extensions-app rxvt-unicode
+sudo dnf -y install wget curl vim zsh htop util-linux-user cmatrix neofetch cava gnome-tweaks gnome-extensions-app
 sudo dnf -y install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf -y install https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
@@ -41,10 +41,6 @@ cp $HOME/Downloads/MyLinux/dotfiles/vimrc $HOME/.vimrc
 vim +PluginInstall +qall
 #sed -i '16,17s/^.//' ~/.vimrc
 cp $HOME/Downloads/MyLinux/dotfiles/tmux.conf $HOME/.tmux.conf
-
-printf "${yellow}>>>${nc} ${cyan}Configuring URXVT...${nc}\n"
-cp $HOME/Downloads/MyLinux/dotfiles/Xresources $HOME/.Xresources
-xrdb $HOME/.Xresources
 
 printf "${yellow}>>>${nc} ${cyan}Installing zsh and oh-my-zsh...${nc}\n"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
