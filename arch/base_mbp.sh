@@ -19,6 +19,7 @@ systemctl enable NetworkManager
 systemctl enable firewalld
 systemctl enable cups.service
 systemctl enable bluetooth
+systemctl enable tlp
 
 useradd -m sarmad
 
