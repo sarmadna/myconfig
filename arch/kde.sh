@@ -5,7 +5,7 @@ cyan='\033[1;36m'
 nc='\033[0m'
 
 printf "${yellow}>>>${nc} ${cyan}Starting post-installation script...${nc}\n"
-sudo pacman -S xorg plasma plasma-wayland-session firefox libreoffice-fresh kde-applications
+sudo pacman -S xorg plasma plasma-wayland-session firefox libreoffice-fresh kde-applications papirus-icon-theme
 
 printf "${yellow}>>>${nc} ${cyan}Installing fonts...${nc}\n"
 git clone https://github.com/powerline/fonts.git $HOME/Downloads/PowerlineFonts
