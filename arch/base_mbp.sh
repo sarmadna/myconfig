@@ -4,9 +4,8 @@ cyan='\033[1;36m'
 red='\033[1;31m'
 nc='\033[0m'
 printf "${yellow}>>>${nc} ${cyan}Starting installation script...${nc}\n"
-sudo timedatectl set-timezone Asia/Baghdad
-#ln -sf /usr/share/zoneinfo/Asia/Baghdad /etc/localtime
-#hwclock --systohc
+ln -sf /usr/share/zoneinfo/Asia/Baghdad /etc/localtime
+hwclock --systohc
 #sed -i '178s/.//' /etc/locale.gen
 vim /etc/locale.gen
 locale-gen
