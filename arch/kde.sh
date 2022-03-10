@@ -5,7 +5,7 @@ cyan='\033[1;36m'
 nc='\033[0m'
 
 printf "${yellow}>>>${nc} ${cyan}Starting post-installation script...${nc}\n"
-sudo pacman -S xorg plasma plasma-wayland-session kde-applications firefox telegram-desktop libreoffice-fresh gnome-disk-utility
+sudo pacman -S xorg plasma plasma-wayland-session kde-applications firefox telegram-desktop libreoffice-fresh gnome-disk-utility papirus-icon-theme
 sudo systemctl enable sddm
 
 printf "${yellow}>>>${nc} ${cyan}Installing fonts...${nc}\n"
