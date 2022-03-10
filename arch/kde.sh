@@ -5,7 +5,7 @@ cyan='\033[1;36m'
 nc='\033[0m'
 
 printf "${yellow}>>>${nc} ${cyan}Starting post-installation script...${nc}\n"
-sudo pacman -S xorg plasma plasma-wayland-session firefox kde-applications papirus-icon-theme
+sudo pacman -S xorg plasma plasma-wayland-session firefox kde-applications
 sudo systemctl enable sddm
 
 printf "${yellow}>>>${nc} ${cyan}Installing fonts...${nc}\n"
