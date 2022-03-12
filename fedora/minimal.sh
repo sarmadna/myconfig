@@ -2,6 +2,7 @@
 
 yellow='\033[1;33m'
 cyan='\033[1;36m'
+red='\033[1;31m'
 nc='\033[0m'
 
 printf "${yellow}>>>${nc} ${cyan}Starting post-installation script...${nc}\n"
@@ -45,7 +46,7 @@ echo "if [[ ! \${DISPLAY} && \${XDG_VTNR} == 1 ]]; then" >> $HOME/.zshrc
 echo "    exec startx" >> $HOME/.zshrc
 echo "fi" >> $HOME/.zshrc
 
-printf "${yellow}>>>${nc} ${cyan}Rebooting in...${nc}\n"
+printf "${yellow}>>>${nc} ${red}Rebooting in...${nc}\n"
 for i in {5..1}
 do
   echo $i
