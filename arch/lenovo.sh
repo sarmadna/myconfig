@@ -12,21 +12,13 @@ sed -i '178s/.//' /etc/locale.gen
 #vim /etc/locale.gen
 locale-gen
 echo "LANG=en_US.UTF-8" >> /etc/locale.conf
-echo "macbook" >> /etc/hostname
+echo "lenovo" >> /etc/hostname
 echo "127.0.0.1 localhost" >> /etc/hosts
 echo "::1       localhost" >> /etc/hosts
-echo "127.0.1.1 macbook.localdomain macbook" >> /etc/hosts
+echo "127.0.1.1 lenovo.localdomain lenovo" >> /etc/hosts
 
 printf "${yellow}>>>${nc} ${cyan}Installing packages...${nc}\n"
-# Uncomment for specific system
-# MacBook Pro
-#pacman -S --noconfirm grub efibootmgr networkmanager network-manager-applet wireless_tools wpa_supplicant broadcom-wl dialog bluez bluez-utils firewalld xdg-user-dirs xdg-utils terminus-font gvfs gvfs-afc mtools dosfstools base-devel linux-headers ntfs-3g cups hplip zsh tmux tlp cmatrix neofetch htop
-
-# Lenovo ThinkPad x230
-#pacman -S --noconfirm grub efibootmgr networkmanager network-manager-applet wireless_tools wpa_supplicant dialog bluez bluez-utils firewalld xdg-user-dirs xdg-utils terminus-font gvfs gvfs-afc mtools dosfstools base-devel linux-headers ntfs-3g cups hplip zsh tmux tlp cmatrix neofetch htop
-
-# Desktop PC (AMD+NVIDIA)
-#pacman -S --noconfirm grub efibootmgr os-prober networkmanager network-manager-applet dialog bluez bluez-utils firewalld xdg-user-dirs xdg-utils terminus-font gvfs gvfs-afc mtools dosfstools base-devel linux-headers ntfs-3g cups hplip zsh tmux tlp cmatrix neofetch htop
+pacman -S --noconfirm grub efibootmgr networkmanager network-manager-applet wireless_tools wpa_supplicant dialog bluez bluez-utils firewalld xdg-user-dirs xdg-utils terminus-font gvfs gvfs-afc mtools dosfstools base-devel linux-headers ntfs-3g cups hplip zsh tmux tlp cmatrix neofetch htop
 
 printf "${yellow}>>>${nc} ${cyan}Installing GRUB...${nc}\n"
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
