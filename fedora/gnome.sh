@@ -8,10 +8,11 @@ printf "${yellow}>>>${nc} ${cyan}Starting post-installation script...${nc}\n"
 sudo timedatectl set-timezone Asia/Baghdad
 gsettings set org.gnome.desktop.interface clock-format "12h"
 sudo dnf config-manager --set-enabled google-chrome
-sudo dnf -y install wget curl vim zsh htop util-linux-user cmatrix neofetch cava gnome-tweaks gnome-extensions-app telegram-desktop vlc
+sudo dnf -y install wget curl vim zsh htop util-linux-user cmatrix neofetch cava gnome-tweaks gnome-extensions-app
 sudo dnf -y install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf -y install https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-sudo dnf -y install google-chrome-stable
+sudo dnf -y install google-chrome-stable telegram-desktop vlc
+
 
 printf "${yellow}>>>${nc} ${cyan}Applying theme...${nc}\n"
 git clone https://github.com/vinceliuice/Qogir-theme.git $HOME/Downloads/Qogir-theme
@@ -53,9 +54,6 @@ chsh -s $(which zsh)
 printf "${yellow}>>>${nc} ${cyan}Loading gnome-shell extensions page...${nc}\n"
 xdg-open https://extensions.gnome.org/extension/307/dash-to-dock/
 xdg-open https://extensions.gnome.org/extension/36/lock-keys/
-xdg-open https://extensions.gnome.org/extension/7/removable-drive-menu/
 xdg-open https://extensions.gnome.org/extension/517/caffeine/
 xdg-open https://extensions.gnome.org/extension/4099/no-overview/
 xdg-open https://extensions.gnome.org/extension/19/user-themes/
-xdg-open https://extensions.gnome.org/extension/615/appindicator-support/
-xdg-open https://extensions.gnome.org/extension/1108/add-username-to-top-panel/
