@@ -30,6 +30,7 @@ systemctl enable bluetooth
 systemctl enable firewalld
 systemctl enable cups.service
 systemctl enable tlp
+systemctl enable acpid
 
 printf "${yellow}>>>${nc} ${cyan}Creating user...${nc}\n"
 useradd -m sarmad
