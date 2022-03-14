@@ -18,7 +18,7 @@ echo "::1       localhost" >> /etc/hosts
 echo "127.0.1.1 macbook.localdomain macbook" >> /etc/hosts
 
 printf "${yellow}>>>${nc} ${cyan}Installing packages...${nc}\n"
-pacman -S --noconfirm grub efibootmgr networkmanager network-manager-applet wireless_tools wpa_supplicant broadcom-wl dialog bluez bluez-utils firewalld xdg-user-dirs xdg-utils terminus-font gvfs gvfs-afc mtools dosfstools base-devel linux-headers ntfs-3g cups hplip zsh tmux tlp cmatrix neofetch htop
+pacman -S --noconfirm grub efibootmgr networkmanager network-manager-applet wireless_tools wpa_supplicant broadcom-wl dialog bluez bluez-utils firewalld tlp acpi acpid acpi_call xdg-user-dirs xdg-utils gvfs gvfs-afc mtools dosfstools base-devel linux-headers ntfs-3g cups hplip zsh tmux cmatrix neofetch htop
 
 printf "${yellow}>>>${nc} ${cyan}Installing GRUB...${nc}\n"
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
