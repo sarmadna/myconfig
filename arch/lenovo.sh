@@ -18,7 +18,7 @@ echo "::1       localhost" >> /etc/hosts
 echo "127.0.1.1 lenovo.localdomain lenovo" >> /etc/hosts
 
 printf "${yellow}>>>${nc} ${cyan}Installing packages...${nc}\n"
-pacman -S --noconfirm grub efibootmgr networkmanager network-manager-applet wireless_tools wpa_supplicant dialog bluez bluez-utils firewalld xdg-user-dirs xdg-utils terminus-font gvfs gvfs-afc mtools dosfstools base-devel linux-headers ntfs-3g cups hplip zsh tmux tlp cmatrix neofetch htop
+pacman -S --noconfirm grub efibootmgr networkmanager network-manager-applet wireless_tools wpa_supplicant dialog bluez bluez-utils tlp acpi acpid acpi_call firewalld xdg-user-dirs xdg-utils gvfs gvfs-afc mtools dosfstools base-devel linux-headers ntfs-3g cups hplip zsh tmux cmatrix neofetch htop
 
 printf "${yellow}>>>${nc} ${cyan}Installing GRUB...${nc}\n"
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
@@ -30,6 +30,7 @@ systemctl enable bluetooth
 systemctl enable firewalld
 systemctl enable cups.service
 systemctl enable tlp
+systemctl enable acpid
 
 printf "${yellow}>>>${nc} ${cyan}Creating user...${nc}\n"
 useradd -m sarmad
