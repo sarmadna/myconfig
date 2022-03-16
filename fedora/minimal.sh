@@ -7,7 +7,7 @@ nc='\033[0m'
 
 printf "${yellow}>>>${nc} ${cyan}Starting post-installation script...${nc}\n"
 sudo timedatectl set-timezone Asia/Baghdad
-sudo dnf -y install wget curl vim zsh htop util-linux-user cmatrix neofetch 
+sudo dnf -y install wget curl vim zsh htop util-linux-user cmatrix neofetch sqlite
 sudo dnf -y install Xorg xorg-x11-xinit i3-gaps polybar rofi firefox ranger nautilus picom feh
 sudo dnf -y install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf -y install https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
@@ -42,9 +42,9 @@ cp $HOME/Downloads/MyLinux/dotfiles/zshrc $HOME/.zshrc
 cp $HOME/Downloads/MyLinux/omztheme/saros.zsh-theme $HOME/.oh-my-zsh/themes/
 chsh -s $(which zsh)
 
-echo "if [[ ! \${DISPLAY} && \${XDG_VTNR} == 1 ]]; then" >> $HOME/.zshrc
-echo "    exec startx" >> $HOME/.zshrc
-echo "fi" >> $HOME/.zshrc
+#echo "if [[ ! \${DISPLAY} && \${XDG_VTNR} == 1 ]]; then" >> $HOME/.zshrc
+#echo "    exec startx" >> $HOME/.zshrc
+#echo "fi" >> $HOME/.zshrc
 
 printf "${yellow}>>>${nc} ${red}Rebooting in...${nc}\n"
 for i in {5..1}
