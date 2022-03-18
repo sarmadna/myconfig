@@ -7,12 +7,17 @@ nc='\033[0m'
 printf "${yellow}>>>${nc} ${cyan}Starting post-installation script...${nc}\n"
 sudo pacman -S xorg gnome gnome-extra firefox telegram-desktop
 sudo systemctl enable gdm
+cd $HOME/Downloads/
+git clone https://aur.archlinux.org/yay.git
+cd $HOME/Downloads/yay/
+makepkg -si
 
 printf "${yellow}>>>${nc} ${cyan}Applying theme...${nc}\n"
 git clone https://github.com/vinceliuice/Qogir-theme.git $HOME/Downloads/Qogir-theme
-sudo sh $HOME/Downloads/Qogir-theme/install.sh -d /usr/share/themes -l fedora
+sudo sh $HOME/Downloads/Qogir-theme/install.sh -d /usr/share/themes -l arch
 git clone https://github.com/vinceliuice/Qogir-icon-theme.git $HOME/Downloads/Qogir-icon-theme
 sh $HOME/Downloads/Qogir-icon-theme/install.sh
+gsettings set org.gnome.desktop.interface clock-format "12h"
 gsettings set org.gnome.desktop.interface gtk-theme "Qogir-dark"
 gsettings set org.gnome.desktop.interface icon-theme "Qogir-dark"
 gsettings set org.gnome.desktop.background picture-uri file://$HOME/Downloads/MyLinux/bg/elcapitan.jpg
@@ -41,6 +46,7 @@ cp $HOME/Downloads/MyLinux/omztheme/saros.zsh-theme $HOME/.oh-my-zsh/themes/
 chsh -s $(which zsh)
 
 printf "${yellow}>>>${nc} ${cyan}Loading gnome-shell extensions page...${nc}\n"
+yay -S chrome-gnome-shell
 xdg-open https://extensions.gnome.org/extension/307/dash-to-dock/
 xdg-open https://extensions.gnome.org/extension/36/lock-keys/
 xdg-open https://extensions.gnome.org/extension/517/caffeine/
