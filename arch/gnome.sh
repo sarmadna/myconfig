@@ -47,8 +47,8 @@ chsh -s $(which zsh)
 
 printf "${yellow}>>>${nc} ${cyan}Loading gnome-shell extensions page...${nc}\n"
 yay -S chrome-gnome-shell
-xdg-open https://extensions.gnome.org/extension/307/dash-to-dock/
-xdg-open https://extensions.gnome.org/extension/36/lock-keys/
-xdg-open https://extensions.gnome.org/extension/517/caffeine/
-xdg-open https://extensions.gnome.org/extension/4099/no-overview/
-xdg-open https://extensions.gnome.org/extension/19/user-themes/
+#xdg-open https://extensions.gnome.org/extension/307/dash-to-dock/
+#xdg-open https://extensions.gnome.org/extension/36/lock-keys/
+#xdg-open https://extensions.gnome.org/extension/517/caffeine/
+#xdg-open https://extensions.gnome.org/extension/4099/no-overview/
+#xdg-open https://extensions.gnome.org/extension/19/user-themes/
