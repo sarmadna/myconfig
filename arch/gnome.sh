@@ -5,7 +5,7 @@ cyan='\033[1;36m'
 nc='\033[0m'
 
 printf "${yellow}>>>${nc} ${cyan}Starting post-installation script...${nc}\n"
-sudo pacman -S xorg gnome gnome-extra firefox telegram-desktop
+sudo pacman -S xorg gnome firefox telegram-desktop
 sudo systemctl enable gdm
 cd $HOME/Downloads/
 git clone https://aur.archlinux.org/yay.git
