@@ -24,9 +24,9 @@ sh $HOME/Downloads/Qogir-icon-theme/install.sh
 gsettings set org.gnome.desktop.interface clock-format "12h"
 gsettings set org.gnome.desktop.interface gtk-theme "Qogir-dark"
 gsettings set org.gnome.desktop.interface icon-theme "Qogir-dark"
-gsettings set org.gnome.desktop.background picture-uri file://$HOME/Downloads/MyLinux/bg/elcapitan.jpg
+gsettings set org.gnome.desktop.background picture-uri file://$HOME/Downloads/MyLinux/bg/minimalist04.jpg
 gsettings set org.gnome.desktop.background picture-options "stretched"
-gsettings set org.gnome.desktop.screensaver picture-uri file://$HOME/Downloads/MyLinux/bg/elcapitan.jpg
+gsettings set org.gnome.desktop.screensaver picture-uri file://$HOME/Downloads/MyLinux/bg/minimalist04.jpg
 gsettings set org.gnome.desktop.screensaver picture-options "stretched"
 gsettings set org.gnome.desktop.interface enable-hot-corners false
 gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
