@@ -38,6 +38,8 @@ sh gnome.sh
 
 ### Rofi Configuration
 
+(works only on X11)
+
 Create a new keyboard shortcut
 
 Add the following line
