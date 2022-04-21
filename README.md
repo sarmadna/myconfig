@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Helloo 
+Hello 
 
 The script files handle post-installation tasks and install the apps that I would like to use on my PC. More details on the tasks are described below.
 
