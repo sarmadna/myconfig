@@ -1,9 +1,8 @@
-# My Linux
+# MyConfig
 
 ## Introduction
 
 Hello 
-
 
 The script files handle post-installation tasks and install the apps that I would like to use on my PC. More details on the tasks are described below.
 
@@ -17,7 +16,7 @@ The script files handle post-installation tasks and install the apps that I woul
 * Install oh-my-zsh
 * Create keyboard shortcut for rofi (this is done manually because I don't know how to write a script to do this automatically)
 
-## Install My Linux
+## Install MyConfig
 
 ### Requirements
 
@@ -27,10 +26,10 @@ Please install `git` first if it is not installed already.
 
 Clone the repo to your downloads directory.
 ~~~
-git clone https://github.com/sarmadna/mylinux.git ~/Downloads/MyLinux
+git clone https://github.com/sarmadna/mylinux.git ~/Downloads/myconfig
 ~~~
 
-Then navigate to `MyLinux` folder and run the script.
+Then navigate to `myconfig`` folder and run the script.
 
 For Fedora, navigate to `fedora` folder and then execute the script;
 ~~~
