@@ -17,29 +17,29 @@ git clone https://github.com/powerline/fonts.git $HOME/Downloads/PowerlineFonts
 sh $HOME/Downloads/PowerlineFonts/install.sh
 sudo cp $HOME/Downloads/PowerlineFonts/Terminus/PSF/*.gz /usr/lib/kbd/consolefonts/
 sudo mv /etc/vconsole.conf /etc/vconsole.conf.old
-sudo cp $HOME/Downloads/MyLinux/dotfiles/vconsole.conf /etc/vconsole.conf
+sudo cp $HOME/Downloads/myconfig/dotfiles/vconsole.conf /etc/vconsole.conf
 
 printf "${yellow}>>>${nc} ${cyan}Configuring i3...${nc}\n"
-cp $HOME/Downloads/MyLinux/dotfiles/Xresources $HOME/.Xresources
-cp $HOME/Downloads/MyLinux/dotfiles/xinitrc $HOME/.xinitrc
+cp $HOME/Downloads/myconfig/dotfiles/Xresources $HOME/.Xresources
+cp $HOME/Downloads/myconfig/dotfiles/xinitrc $HOME/.xinitrc
 mkdir -p $HOME/.config/i3
-cp $HOME/Downloads/MyLinux/dotfiles/i3/config $HOME/.config/i3/config
+cp $HOME/Downloads/myconfig/dotfiles/i3/config $HOME/.config/i3/config
 mkdir $HOME/.config/polybar
-cp $HOME/Downloads/MyLinux/dotfiles/polybar/config $HOME/.config/polybar/config
-cp $HOME/Downloads/MyLinux/dotfiles/polybar/launch.sh $HOME/.config/polybar/launch.sh
+cp $HOME/Downloads/myconfig/dotfiles/polybar/config $HOME/.config/polybar/config
+cp $HOME/Downloads/myconfig/dotfiles/polybar/launch.sh $HOME/.config/polybar/launch.sh
 chmod +x $HOME/.config/polybar/launch.sh
 
 printf "${yellow}>>>${nc} ${cyan}Setting up Vim...${nc}\n"
 git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
-cp $HOME/Downloads/MyLinux/dotfiles/vimrc $HOME/.vimrc
+cp $HOME/Downloads/myconfig/dotfiles/vimrc $HOME/.vimrc
 vim +PluginInstall +qall
 #sed -i '16,17s/^.//' ~/.vimrc
-cp $HOME/Downloads/MyLinux/dotfiles/tmux.conf $HOME/.tmux.conf
+cp $HOME/Downloads/myconfig/dotfiles/tmux.conf $HOME/.tmux.conf
 
 printf "${yellow}>>>${nc} ${cyan}Installing zsh and oh-my-zsh...${nc}\n"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-cp $HOME/Downloads/MyLinux/dotfiles/zshrc $HOME/.zshrc
-cp $HOME/Downloads/MyLinux/omztheme/saros.zsh-theme $HOME/.oh-my-zsh/themes/
+cp $HOME/Downloads/myconfig/dotfiles/zshrc $HOME/.zshrc
+cp $HOME/Downloads/myconfig/omztheme/saros.zsh-theme $HOME/.oh-my-zsh/themes/
 chsh -s $(which zsh)
 
 #echo "if [[ ! \${DISPLAY} && \${XDG_VTNR} == 1 ]]; then" >> $HOME/.zshrc

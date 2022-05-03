@@ -24,9 +24,9 @@ sh $HOME/Downloads/Qogir-icon-theme/install.sh
 gsettings set org.gnome.desktop.interface clock-format "12h"
 gsettings set org.gnome.desktop.interface gtk-theme "Qogir-dark"
 gsettings set org.gnome.desktop.interface icon-theme "Qogir-dark"
-gsettings set org.gnome.desktop.background picture-uri file://$HOME/Downloads/MyLinux/bg/minimalist04.jpg
+gsettings set org.gnome.desktop.background picture-uri file://$HOME/Downloads/myconfig/bg/minimalist04.jpg
 gsettings set org.gnome.desktop.background picture-options "stretched"
-gsettings set org.gnome.desktop.screensaver picture-uri file://$HOME/Downloads/MyLinux/bg/minimalist04.jpg
+gsettings set org.gnome.desktop.screensaver picture-uri file://$HOME/Downloads/myconfig/bg/minimalist04.jpg
 gsettings set org.gnome.desktop.screensaver picture-options "stretched"
 gsettings set org.gnome.desktop.interface enable-hot-corners false
 gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
@@ -39,14 +39,14 @@ sh $HOME/Downloads/PowerlineFonts/install.sh
 
 printf "${yellow}>>>${nc} ${cyan}Setting up Vim...${nc}\n"
 git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
-cp $HOME/Downloads/MyLinux/dotfiles/vimrc $HOME/.vimrc
+cp $HOME/Downloads/myconfig/dotfiles/vimrc $HOME/.vimrc
 vim +PluginInstall +qall
-cp $HOME/Downloads/MyLinux/dotfiles/tmux.conf $HOME/.tmux.conf
+cp $HOME/Downloads/myconfig/dotfiles/tmux.conf $HOME/.tmux.conf
 
 printf "${yellow}>>>${nc} ${cyan}Installing zsh and oh-my-zsh...${nc}\n"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-cp $HOME/Downloads/MyLinux/dotfiles/zshrc $HOME/.zshrc
-cp $HOME/Downloads/MyLinux/omztheme/saros.zsh-theme $HOME/.oh-my-zsh/themes/
+cp $HOME/Downloads/myconfig/dotfiles/zshrc $HOME/.zshrc
+cp $HOME/Downloads/myconfig/omztheme/saros.zsh-theme $HOME/.oh-my-zsh/themes/
 chsh -s $(which zsh)
 
 printf "${yellow}>>>${nc} ${cyan}Loading gnome-shell extensions page...${nc}\n"
