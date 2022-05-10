@@ -28,7 +28,7 @@ gsettings set org.gnome.desktop.background picture-options "stretched"
 gsettings set org.gnome.desktop.screensaver picture-uri file://$HOME/Downloads/myconfig/bg/minimalist04.jpg
 gsettings set org.gnome.desktop.screensaver picture-options "stretched"
 gsettings set org.gnome.desktop.interface enable-hot-corners false
-gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
+gsettings set org.gnome.desktop.wm.preferences button-layout "close,minimize,maximize:"
 gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'ara'), ('xkb', 'iq+ku_ara')]"
 
