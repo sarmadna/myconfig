@@ -23,8 +23,6 @@ git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git $HOME/Downloads/
 sudo sh $HOME/Downloads/WhiteSur-gtk-theme/install.sh -c Dark -t default -p 75
 git clone https://github.com/vinceliuice/WhiteSur-icon-theme.git $HOME/Downloads/WhiteSur-icon-theme
 sh $HOME/Downloads/WhiteSur-icon-theme/install.sh -b
-gsettings set org.gnome.desktop.interface gtk-theme "Qogir-dark"
-gsettings set org.gnome.desktop.interface icon-theme "Qogir-dark"
 gsettings set org.gnome.desktop.background picture-uri file://$HOME/Downloads/myconfig/bg/minimalist04.jpg
 gsettings set org.gnome.desktop.background picture-options "stretched"
 gsettings set org.gnome.desktop.screensaver picture-uri file://$HOME/Downloads/myconfig/bg/minimalist04.jpg
