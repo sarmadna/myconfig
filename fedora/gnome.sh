@@ -16,7 +16,7 @@ sudo dnf -y install google-chrome-stable telegram-desktop vlc
 
 printf "${yellow}>>>${nc} ${cyan}Applying theme...${nc}\n"
 git clone https://github.com/vinceliuice/Qogir-theme.git $HOME/Downloads/Qogir-theme
-sudo sh $HOME/Downloads/Qogir-theme/install.sh -d /usr/share/themes -l fedora
+sudo sh $HOME/Downloads/Qogir-theme/install.sh -d /usr/share/themes
 git clone https://github.com/vinceliuice/Qogir-icon-theme.git $HOME/Downloads/Qogir-icon-theme
 sh $HOME/Downloads/Qogir-icon-theme/install.sh
 git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git $HOME/Downloads/WhiteSur-gtk-theme
