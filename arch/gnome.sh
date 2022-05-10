@@ -22,8 +22,6 @@ sudo sh $HOME/Downloads/Qogir-theme/install.sh -d /usr/share/themes -l arch
 git clone https://github.com/vinceliuice/Qogir-icon-theme.git $HOME/Downloads/Qogir-icon-theme
 sh $HOME/Downloads/Qogir-icon-theme/install.sh
 gsettings set org.gnome.desktop.interface clock-format "12h"
-gsettings set org.gnome.desktop.interface gtk-theme "Qogir-dark"
-gsettings set org.gnome.desktop.interface icon-theme "Qogir-dark"
 gsettings set org.gnome.desktop.background picture-uri file://$HOME/Downloads/myconfig/bg/minimalist04.jpg
 gsettings set org.gnome.desktop.background picture-options "stretched"
 gsettings set org.gnome.desktop.screensaver picture-uri file://$HOME/Downloads/myconfig/bg/minimalist04.jpg
