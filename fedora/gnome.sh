@@ -20,7 +20,7 @@ sudo sh $HOME/Downloads/Qogir-theme/install.sh -d /usr/share/themes -l fedora
 git clone https://github.com/vinceliuice/Qogir-icon-theme.git $HOME/Downloads/Qogir-icon-theme
 sh $HOME/Downloads/Qogir-icon-theme/install.sh
 git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git $HOME/Downloads/WhiteSur-gtk-theme
-sudo sh $HOME/Downloads/WhiteSur-gtk-theme/install.sh -c dark -t default -p 75
+sudo sh $HOME/Downloads/WhiteSur-gtk-theme/install.sh -c Dark -t default -p 75
 git clone https://github.com/vinceliuice/WhiteSur-icon-theme.git $HOME/Downloads/WhiteSur-icon-theme
 sh $HOME/Downloads/WhiteSur-icon-theme/install.sh -b
 gsettings set org.gnome.desktop.interface gtk-theme "Qogir-dark"
