@@ -15,20 +15,16 @@ sudo dnf -y install google-chrome-stable telegram-desktop vlc inkscape gimp
 
 
 printf "${yellow}>>>${nc} ${cyan}Applying theme...${nc}\n"
-#git clone https://github.com/vinceliuice/Qogir-theme.git $HOME/Downloads/Qogir-theme
-#sudo sh $HOME/Downloads/Qogir-theme/install.sh -d /usr/share/themes
-#git clone https://github.com/vinceliuice/Qogir-icon-theme.git $HOME/Downloads/Qogir-icon-theme
-#sh $HOME/Downloads/Qogir-icon-theme/install.sh
-#git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git $HOME/Downloads/WhiteSur-gtk-theme
-#sudo sh $HOME/Downloads/WhiteSur-gtk-theme/install.sh -c Dark -t default -p 75 -d /usr/share/themes
+git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git $HOME/Downloads/WhiteSur-gtk-theme
+sudo sh $HOME/Downloads/WhiteSur-gtk-theme/install.sh -c Dark -t default -p 75 -d /usr/share/themes
 git clone https://github.com/vinceliuice/WhiteSur-icon-theme.git $HOME/Downloads/WhiteSur-icon-theme
 sh $HOME/Downloads/WhiteSur-icon-theme/install.sh -b
-#gsettings set org.gnome.desktop.background picture-uri file://$HOME/Downloads/myconfig/bg/minimalist04.jpg
-#gsettings set org.gnome.desktop.background picture-options "stretched"
-#gsettings set org.gnome.desktop.screensaver picture-uri file://$HOME/Downloads/myconfig/bg/minimalist04.jpg
-#gsettings set org.gnome.desktop.screensaver picture-options "stretched"
+gsettings set org.gnome.desktop.background picture-uri file://$HOME/Downloads/myconfig/bg/minimalist04.jpg
+gsettings set org.gnome.desktop.background picture-options "stretched"
+gsettings set org.gnome.desktop.screensaver picture-uri file://$HOME/Downloads/myconfig/bg/minimalist04.jpg
+gsettings set org.gnome.desktop.screensaver picture-options "stretched"
 gsettings set org.gnome.desktop.interface enable-hot-corners false
-gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close:"
+gsettings set org.gnome.desktop.wm.preferences button-layout "close,minimize,maximize:"
 gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'ara'), ('xkb', 'iq+ku_ara')]"
 
