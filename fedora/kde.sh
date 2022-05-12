@@ -11,6 +11,7 @@ sudo dnf -y install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-rel
 sudo dnf -y install https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf groupinstall -y "KDE Plasma Workspaces"
 sudo dnf config-manager --set-enabled google-chrome
+sudo dnf -y install google-chrome-stable telegram vlc
 
 #printf "${yellow}>>>${nc} ${cyan}Applying theme...${nc}\n"
 
