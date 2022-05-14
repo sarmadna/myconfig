@@ -7,10 +7,28 @@ nc='\033[0m'
 
 printf "${yellow}>>>${nc} ${cyan}Starting post-installation script...${nc}\n"
 sudo timedatectl set-timezone Asia/Baghdad
-sudo dnf -y install wget curl vim zsh htop util-linux-user cmatrix neofetch sqlite
-sudo dnf -y install Xorg xorg-x11-xinit i3-gaps polybar rofi firefox ranger nautilus picom feh
-sudo dnf -y install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
-sudo dnf -y install https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf -y install \
+wget \
+curl \
+vim \
+zsh \
+htop \
+util-linux-user \
+cmatrix \
+neofetch \
+sqlite \
+Xorg \
+xorg-x11-xinit \
+i3-gaps \
+polybar \
+rofi \
+firefox \
+ranger \
+nautilus \
+picom \
+feh \
+https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
+https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 printf "${yellow}>>>${nc} ${cyan}Installing powerline fonts...${nc}\n"
 git clone https://github.com/powerline/fonts.git $HOME/Downloads/PowerlineFonts
@@ -33,7 +51,6 @@ printf "${yellow}>>>${nc} ${cyan}Setting up Vim...${nc}\n"
 git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
 cp $HOME/Downloads/myconfig/dotfiles/vimrc $HOME/.vimrc
 vim +PluginInstall +qall
-#sed -i '16,17s/^.//' ~/.vimrc
 cp $HOME/Downloads/myconfig/dotfiles/tmux.conf $HOME/.tmux.conf
 
 printf "${yellow}>>>${nc} ${cyan}Installing zsh and oh-my-zsh...${nc}\n"
