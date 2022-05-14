@@ -6,10 +6,21 @@ nc='\033[0m'
 
 printf "${yellow}>>>${nc} ${cyan}Starting post-installation script...${nc}\n"
 sudo timedatectl set-timezone Asia/Baghdad
-sudo dnf -y install wget curl vim zsh tmux htop latte-dock util-linux-user cmatrix neofetch cava fedora-workstation-repositories \
+sudo dnf -y groupinstall "KDE Plasma Workspaces"
+sudo dnf -y install \
+wget \
+curl \
+vim \
+zsh \
+tmux \
+htop \
+util-linux-user \
+cmatrix \
+neofetch \
+cava \
+fedora-workstation-repositories \
 https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
 https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-sudo dnf groupinstall -y "KDE Plasma Workspaces"
 sudo dnf config-manager --set-enabled google-chrome
 sudo dnf -y install google-chrome-stable telegram vlc
 
