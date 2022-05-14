@@ -8,23 +8,17 @@ printf "${yellow}>>>${nc} ${cyan}Starting post-installation script...${nc}\n"
 sudo timedatectl set-timezone Asia/Baghdad
 gsettings set org.gnome.desktop.interface clock-format "12h"
 sudo dnf config-manager --set-enabled google-chrome
-sudo dnf -y install wget curl vim zsh htop util-linux-user cmatrix neofetch cava gnome-tweaks gnome-extensions-app
-sudo dnf -y install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
-sudo dnf -y install https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf -y install wget curl vim zsh htop util-linux-user cmatrix neofetch cava gnome-tweaks gnome-extensions-app \
+https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
+https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf -y install google-chrome-stable telegram-desktop vlc inkscape gimp
 
 
 printf "${yellow}>>>${nc} ${cyan}Applying theme...${nc}\n"
-git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git $HOME/Downloads/WhiteSur-gtk-theme
-sudo sh $HOME/Downloads/WhiteSur-gtk-theme/install.sh -c Dark -t default -p 75 -d /usr/share/themes
 git clone https://github.com/vinceliuice/WhiteSur-icon-theme.git $HOME/Downloads/WhiteSur-icon-theme
 sh $HOME/Downloads/WhiteSur-icon-theme/install.sh -b
-gsettings set org.gnome.desktop.background picture-uri file://$HOME/Downloads/myconfig/bg/minimalist04.jpg
-gsettings set org.gnome.desktop.background picture-options "stretched"
-gsettings set org.gnome.desktop.screensaver picture-uri file://$HOME/Downloads/myconfig/bg/minimalist04.jpg
-gsettings set org.gnome.desktop.screensaver picture-options "stretched"
 gsettings set org.gnome.desktop.interface enable-hot-corners false
-gsettings set org.gnome.desktop.wm.preferences button-layout "close,minimize,maximize:"
+gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
 gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'ara'), ('xkb', 'iq+ku_ara')]"
 
@@ -40,7 +34,6 @@ printf "${yellow}>>>${nc} ${cyan}Setting up Vim...${nc}\n"
 git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
 cp $HOME/Downloads/myconfig/dotfiles/vimrc $HOME/.vimrc
 vim +PluginInstall +qall
-#sed -i '16,17s/^.//' ~/.vimrc
 cp $HOME/Downloads/myconfig/dotfiles/tmux.conf $HOME/.tmux.conf
 
 printf "${yellow}>>>${nc} ${cyan}Installing zsh and oh-my-zsh...${nc}\n"
@@ -50,7 +43,6 @@ cp $HOME/Downloads/myconfig/omztheme/saros.zsh-theme $HOME/.oh-my-zsh/themes/
 chsh -s $(which zsh)
 
 printf "${yellow}>>>${nc} ${cyan}Loading gnome-shell extensions page...${nc}\n"
-xdg-open https://extensions.gnome.org/extension/307/dash-to-dock/
 xdg-open https://extensions.gnome.org/extension/36/lock-keys/
 xdg-open https://extensions.gnome.org/extension/517/caffeine/
 xdg-open https://extensions.gnome.org/extension/19/user-themes/
