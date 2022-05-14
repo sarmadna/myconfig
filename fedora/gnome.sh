@@ -8,7 +8,18 @@ printf "${yellow}>>>${nc} ${cyan}Starting post-installation script...${nc}\n"
 sudo timedatectl set-timezone Asia/Baghdad
 gsettings set org.gnome.desktop.interface clock-format "12h"
 sudo dnf config-manager --set-enabled google-chrome
-sudo dnf -y install wget curl vim zsh htop util-linux-user cmatrix neofetch cava gnome-tweaks gnome-extensions-app \
+sudo dnf -y install \
+wget \
+curl \
+vim \
+zsh \
+htop \
+util-linux-user \
+cmatrix \
+neofetch \
+cava \
+gnome-tweaks \
+gnome-extensions-app \
 https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
 https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf -y install google-chrome-stable telegram-desktop vlc inkscape gimp
