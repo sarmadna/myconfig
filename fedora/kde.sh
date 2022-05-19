@@ -8,26 +8,26 @@ printf "${yellow}>>>${nc} ${cyan}Starting post-installation script...${nc}\n"
 sudo timedatectl set-timezone Asia/Baghdad
 sudo dnf -y groupinstall "KDE Plasma Workspaces"
 sudo dnf -y install \
-wget \
-curl \
 vim \
 zsh \
+wget \
+curl \
 tmux \
 htop \
-util-linux-user \
+cava \
+sqlite \
 cmatrix \
 neofetch \
-cava \
+mediawriter \
+util-linux-user \
 fedora-workstation-repositories \
 https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
-https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm \
-mediawriter \
-sqlite \
-latte-dock
+https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
 sudo dnf config-manager --set-enabled google-chrome
 sudo dnf -y install google-chrome-stable telegram vlc
 
-printf "${yellow}>>>${nc} ${cyan}Installing themes...${nc}\n"
+#printf "${yellow}>>>${nc} ${cyan}Installing themes...${nc}\n"
 
 printf "${yellow}>>>${nc} ${cyan}Installing fonts...${nc}\n"
 git clone https://github.com/powerline/fonts.git $HOME/Downloads/PowerlineFonts
