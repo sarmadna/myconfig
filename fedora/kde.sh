@@ -24,6 +24,12 @@ https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E 
 sudo dnf config-manager --set-enabled google-chrome
 sudo dnf -y install google-chrome-stable telegram vlc
 
+printf "${yellow}>>>${nc} ${cyan}Installing themes...${nc}\n"
+git clone https://github.com/vinceliuice/WhiteSur-kde.git $HOME/Downloads/WhiteSur-kde
+sh $HOME/Downloads/WhiteSur-kde/install.sh
+git clone https://github.com/vinceliuice/WhiteSur-icon-theme.git $HOME/Downloads/WhiteSur-icon-theme
+sh $HOME/Downloads/WhiteSur-icon-theme/install.sh -b
+
 printf "${yellow}>>>${nc} ${cyan}Installing fonts...${nc}\n"
 git clone https://github.com/powerline/fonts.git $HOME/Downloads/PowerlineFonts
 sh $HOME/Downloads/PowerlineFonts/install.sh
