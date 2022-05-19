@@ -53,6 +53,6 @@ cp $HOME/Downloads/myconfig/dotfiles/zshrc $HOME/.zshrc
 cp $HOME/Downloads/myconfig/omztheme/saros.zsh-theme $HOME/.oh-my-zsh/themes/
 chsh -s $(which zsh)
 
-sudo systemctl set-default multi-user.target
+sudo systemctl set-default graphical.target
 sudo systemctl enable sddm.service
 sudo systemctl start sddm.service
