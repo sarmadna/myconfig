@@ -17,6 +17,7 @@ htop \
 cava \
 sqlite \
 cmatrix \
+firefox \
 neofetch \
 mediawriter \
 util-linux-user \
