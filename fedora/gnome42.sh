@@ -9,21 +9,26 @@ sudo timedatectl set-timezone Asia/Baghdad
 gsettings set org.gnome.desktop.interface clock-format "12h"
 sudo dnf config-manager --set-enabled google-chrome
 sudo dnf -y install \
-wget \
-curl \
+
 vim \
 zsh \
+wget \
+curl \
 htop \
-util-linux-user \
+cava \
 cmatrix \
 neofetch \
-cava \
 gnome-tweaks \
+util-linux-user \
 gnome-extensions-app \
+gnome-shell-extension-caffeine \
+gnome-shell-extension-user-theme \
+gnome-shell-extension-drive-menu \
+gnome-shell-extension-appindicator \
+gnome-shell-extension-dash-to-dock \
 https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
 https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf -y install google-chrome-stable telegram-desktop vlc inkscape gimp
-
 
 printf "${yellow}>>>${nc} ${cyan}Applying theme...${nc}\n"
 git clone https://github.com/vinceliuice/WhiteSur-icon-theme.git $HOME/Downloads/WhiteSur-icon-theme
@@ -55,7 +60,7 @@ chsh -s $(which zsh)
 
 printf "${yellow}>>>${nc} ${cyan}Loading gnome-shell extensions page...${nc}\n"
 xdg-open https://extensions.gnome.org/extension/36/lock-keys/
-xdg-open https://extensions.gnome.org/extension/517/caffeine/
-xdg-open https://extensions.gnome.org/extension/19/user-themes/
-xdg-open https://extensions.gnome.org/extension/7/removable-drive-menu/
-xdg-open https://extensions.gnome.org/extension/615/appindicator-support/
+#xdg-open https://extensions.gnome.org/extension/517/caffeine/
+#xdg-open https://extensions.gnome.org/extension/19/user-themes/
+#xdg-open https://extensions.gnome.org/extension/7/removable-drive-menu/
+#xdg-open https://extensions.gnome.org/extension/615/appindicator-support/
