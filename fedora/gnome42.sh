@@ -9,7 +9,6 @@ sudo timedatectl set-timezone Asia/Baghdad
 gsettings set org.gnome.desktop.interface clock-format "12h"
 sudo dnf config-manager --set-enabled google-chrome
 sudo dnf -y install \
-
 vim \
 zsh \
 wget \
