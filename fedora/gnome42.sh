@@ -27,7 +27,7 @@ gnome-shell-extension-appindicator \
 gnome-shell-extension-dash-to-dock \
 https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
 https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-sudo dnf -y install google-chrome-stable telegram-desktop vlc inkscape gimp
+sudo dnf -y install google-chrome-stable telegram-desktop vlc
 
 printf "${yellow}>>>${nc} ${cyan}Applying theme...${nc}\n"
 git clone https://github.com/vinceliuice/WhiteSur-icon-theme.git $HOME/Downloads/WhiteSur-icon-theme
