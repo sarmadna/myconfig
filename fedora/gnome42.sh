@@ -57,9 +57,18 @@ cp $HOME/Downloads/myconfig/dotfiles/zshrc $HOME/.zshrc
 cp $HOME/Downloads/myconfig/omztheme/saros.zsh-theme $HOME/.oh-my-zsh/themes/
 chsh -s $(which zsh)
 
-printf "${yellow}>>>${nc} ${cyan}Loading gnome-shell extensions page...${nc}\n"
-xdg-open https://extensions.gnome.org/extension/36/lock-keys/
+#printf "${yellow}>>>${nc} ${cyan}Loading gnome-shell extensions page...${nc}\n"
+#xdg-open https://extensions.gnome.org/extension/36/lock-keys/
 #xdg-open https://extensions.gnome.org/extension/517/caffeine/
 #xdg-open https://extensions.gnome.org/extension/19/user-themes/
 #xdg-open https://extensions.gnome.org/extension/7/removable-drive-menu/
 #xdg-open https://extensions.gnome.org/extension/615/appindicator-support/
+
+printf "${yellow}>>>${nc} ${cyan}Please install the following gs extensions...${nc}\n"
+printf "https://extensions.gnome.org/extension/36/lock-keys/ \n
+https://extensions.gnome.org/extension/517/caffeine/ \n
+https://extensions.gnome.org/extension/19/user-themes/ \n
+https://extensions.gnome.org/extension/7/removable-drive-menu/ \n
+https://extensions.gnome.org/extension/615/appindicator-support/ \n
+https://extensions.gnome.org/extension/5004/dash-to-dock-for-cosmic/"
+
