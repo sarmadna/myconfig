@@ -20,11 +20,6 @@ neofetch \
 gnome-tweaks \
 util-linux-user \
 gnome-extensions-app \
-gnome-shell-extension-caffeine \
-gnome-shell-extension-user-theme \
-gnome-shell-extension-drive-menu \
-gnome-shell-extension-appindicator \
-gnome-shell-extension-dash-to-dock \
 https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
 https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf -y install google-chrome-stable telegram-desktop vlc
