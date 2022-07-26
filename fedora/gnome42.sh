@@ -70,5 +70,5 @@ https://extensions.gnome.org/extension/517/caffeine/\n
 https://extensions.gnome.org/extension/19/user-themes/\n
 https://extensions.gnome.org/extension/7/removable-drive-menu/\n
 https://extensions.gnome.org/extension/615/appindicator-support/\n
-https://extensions.gnome.org/extension/5004/dash-to-dock-for-cosmic/"
+https://extensions.gnome.org/extension/5004/dash-to-dock-for-cosmic/\n"
 
