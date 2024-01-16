@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="500"
+   height="500"
+   viewBox="0 0 132.29166 132.29167"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
+   sodipodi:docname="launcher_dark.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="true"
+     units="px"
+     width="500px"
+     inkscape:showpageshadow="false"
+     inkscape:zoom="1.1562548"
+     inkscape:cx="169.94524"
+     inkscape:cy="247.35032"
+     inkscape:window-width="1440"
+     inkscape:window-height="872"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid9"
+       spacingx="1.3229167"
+       spacingy="1.3229167" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g975">
+      <path
+         id="rect33"
+         style="fill:#cccccc;stroke-width:0.264582;stroke:none"
+         d="M 69.453124,9.9218756 V 36.380207 62.83854 H 95.911457 122.36978 V 36.380207 A 26.458332,26.458332 0 0 0 95.911457,9.9218756 Z" />
+      <path
+         id="path727"
+         style="fill:#cccccc;stroke-width:0.264582;stroke:none"
+         d="M 9.921871,62.838538 H 36.380202 62.838533 V 36.380205 9.921878 H 36.380202 A 26.458332,26.458332 0 0 0 9.921871,36.380205 Z" />
+      <path
+         id="path729"
+         style="fill:#cccccc;stroke-width:0.264582;stroke:none"
+         d="M 9.921871,69.453132 H 36.380202 62.838533 V 95.911465 122.36979 H 36.380202 A 26.458332,26.458332 0 0 1 9.921871,95.911465 Z" />
+      <path
+         id="path731"
+         style="fill:#cccccc;stroke-width:0.264582;stroke:none"
+         d="M 122.36979,69.453132 H 95.911458 69.453127 V 95.911465 122.36979 H 95.911458 A 26.458332,26.458332 0 0 0 122.36979,95.911465 Z" />
+    </g>
+  </g>
+</svg>
