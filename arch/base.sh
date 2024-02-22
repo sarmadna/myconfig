@@ -117,7 +117,7 @@ if confirm; then
     useradd -m -c "$firstName $lastName" $userName
     echo $userName:$passWord | chpasswd
     usermod -aG wheel $userName
-    sed -i '85s/^..//' /etc/sudoers
+    echo "$userName ALL=(ALL) ALL" >> /etc/sudoers.d/$userName
     # Disable ROOT account
     passwd -l root
 
