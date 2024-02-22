@@ -116,7 +116,6 @@ if confirm; then
     # Please change the username and the password accordingly
     useradd -m -c "$firstName $lastName" $userName
     echo $userName:$passWord | chpasswd
-    usermod -aG wheel $userName
     echo "$userName ALL=(ALL) ALL" >> /etc/sudoers.d/$userName
     # Disable ROOT account
     passwd -l root
