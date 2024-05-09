@@ -22,8 +22,7 @@ sudo apt -y install \
 	cmatrix \
 	neofetch \
 	btrfs-progs \
-    fonts-terminus \
-    fonts-terminus-otb
+	systemd-zram-generator
 
 printf "${yellow}>>>${nc} ${cyan}Setting up Vim...${nc}\n"
 git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
