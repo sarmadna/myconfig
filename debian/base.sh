@@ -13,14 +13,17 @@ sudo apt update && sudo apt upgrade -y
 
 printf "${yellow}>>>${nc} ${cyan}Installing cli apps...${nc}\n"
 sudo apt -y install \
+	ufw \
 	vim \
 	zsh \
 	wget \
 	curl \
 	htop \
+	samba \
 	sqlite3 \
 	cmatrix \
 	neofetch \
+	net-tools \
 	btrfs-progs \
 	systemd-zram-generator
 
