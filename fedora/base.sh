@@ -25,7 +25,7 @@ sudo dnf -y install \
 	htop \
 	sqlite \
 	cmatrix \
-	neofetch \
+	fastfetch \
 	util-linux-user \
 	transmission-cli \
 	terminus-fonts-console
