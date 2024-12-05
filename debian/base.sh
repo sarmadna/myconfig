@@ -22,10 +22,9 @@ sudo apt -y install \
 	samba \
 	sqlite3 \
 	cmatrix \
-	neofetch \
 	net-tools \
-	btrfs-progs \
-	systemd-zram-generator
+	screenfetch \
+	btrfs-progs
 
 printf "${yellow}>>>${nc} ${cyan}Setting up Vim...${nc}\n"
 git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
