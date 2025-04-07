@@ -34,16 +34,16 @@ if confirm; then
     printf "${yellow}>>>${nc} ${cyan}Configuring the system...${nc}\n"
     ln -sf /usr/share/zoneinfo/Asia/Baghdad /etc/localtime
     hwclock --systohc
-    sed -i '171s/.//' /etc/locale.gen
+    #sed -i '171s/.//' /etc/locale.gen
     locale-gen
     echo "LANG=en_US.UTF-8" >> /etc/locale.conf
     echo "$hostName" >> /etc/hostname
     echo "127.0.0.1 localhost" >> /etc/hosts
     echo "::1       localhost" >> /etc/hosts
     echo "127.0.1.1 $hostName.localdomain $hostName" >> /etc/hosts
-    sed -i '37s/^.//' /etc/pacman.conf
-    cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
-    relfector -l 5 -c "" --sort rate --save /etc/pacman.d/mirrorlist
+    #sed -i '37s/^.//' /etc/pacman.conf
+    #cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
+    #relfector -l 5 -c "" --sort rate --save /etc/pacman.d/mirrorlist
 
     printf "${yellow}>>>${nc} ${cyan}Installing packages...${nc}\n"
     pacman -S \
@@ -81,10 +81,6 @@ if confirm; then
         flatpak \
         cmatrix \
         neofetch \
-        apparmor \
-        audit \
-        python-notify2 \
-        python-psutil \
         terminus-font
 
     printf "${yellow}>>>${nc} ${cyan}Setting up zram swap...${nc}\n"
@@ -100,12 +96,8 @@ if confirm; then
     systemctl enable firewalld
     systemctl enable acpid
     systemctl enable systemd-resolved
-    systemctl enable apparmor
-    systemctl enable auditd
-    systemctl enable bluetooth
+    #systemctl enable bluetooth
     
-    echo "lsm=landlock,lockdown,yama,integrity,apparmor,bpf" >> /etc/default/grub
-
     printf "${yellow}>>>${nc} ${cyan}Setting up bootloader...${nc}\n"
     grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
     grub-mkconfig -o /boot/grub/grub.cfg
@@ -121,7 +113,6 @@ if confirm; then
     passwd -l root
 
     printf "${yellow}>>>${nc} ${green}Done...!${nc}\n"
-    printf "${yellow}>>>${nc} ${yellow}Please configure mkinitcpio and grup accordingly.${nc}\n"
 
 else
     printf "${yellow}>>>${nc} ${red}Aborting...!${nc}\n"
