@@ -6,10 +6,7 @@ sudo firewall-cmd --add-port=1025-65535/udp --permanent
 sudo firewall-cmd --reload
 
 sudo pacman -S \
-    xorg \
-    plasma \
-    plasma-wayland-session \
-    kwalletmanager \
+    plasma-desktop \
     dolphin \
     konsole \
     ttf-dejavu \
