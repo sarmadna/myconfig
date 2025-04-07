@@ -7,6 +7,7 @@ sudo firewall-cmd --reload
 
 sudo pacman -S \
     plasma-desktop \
+    discover \
     dolphin \
     konsole \
     ttf-dejavu \
