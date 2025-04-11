@@ -10,6 +10,7 @@ sudo pacman -S \
     discover \
     dolphin \
     konsole \
+    kscreen \
     ttf-dejavu \
     firefox \
     gnome-disk-utility \
