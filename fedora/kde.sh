@@ -9,10 +9,11 @@ sudo dnf -y install \
 	plasma-desktop \
 	konsole \
 	dolphin \
-	firefox \
+	discover \
 	kscreen \
 	plasma-nm \
-	discover \
+	firefox \
+	gnome-abrt \
 	papirus-icon-theme
 
 printf "${yellow}>>>${nc} ${red}Done...!${nc}\n"
