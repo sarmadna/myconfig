@@ -34,7 +34,7 @@ if confirm; then
     printf "${yellow}>>>${nc} ${cyan}Configuring the system...${nc}\n"
     ln -sf /usr/share/zoneinfo/Asia/Baghdad /etc/localtime
     hwclock --systohc
-    #sed -i '171s/.//' /etc/locale.gen
+    sed -i '171s/.//' /etc/locale.gen
     locale-gen
     echo "LANG=en_US.UTF-8" >> /etc/locale.conf
     echo "$hostName" >> /etc/hostname
