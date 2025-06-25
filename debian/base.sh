@@ -16,6 +16,7 @@ sudo apt -y install \
 	ufw \
 	vim \
 	zsh \
+	nala \
 	wget \
 	curl \
 	htop \
