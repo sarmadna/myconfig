@@ -27,8 +27,8 @@ sudo dnf remove \
 	neochat \
 	kde-connect \
 	krdc \
-	krfb 
-
+	krfb \
+	kmouth
 
 printf "${yellow}>>>${nc} ${red}Done...!${nc}\n"
 
