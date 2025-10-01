@@ -6,6 +6,7 @@ nc='\033[0m'
 
 printf "${yellow}>>>${nc} ${cyan}Installing apps...${nc}\n"
 sudo dnf install -y \
+	openrgb \
 	gnome-disk-utility \
 	papirus-icon-theme
 
