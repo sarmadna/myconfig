@@ -31,3 +31,4 @@ sudo dnf remove \
 
 
 printf "${yellow}>>>${nc} ${red}Done...!${nc}\n"
+
