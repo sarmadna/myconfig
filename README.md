@@ -32,9 +32,10 @@ Then run the other scripts depending on the DE you use like `gnome.sh` or  `kde.
 ### Using `wget`:
 
 Download the script file fist
-
-`wget https://sarmadna.github.io/myconfig/fedora/base.sh`
-
+~~~
+wget https://sarmadna.github.io/myconfig/fedora/base.sh
+~~~
 Then run the script 
-
-`sh base.sh`
+~~~
+sh base.sh
+~~~
