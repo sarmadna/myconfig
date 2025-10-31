@@ -1,11 +1,8 @@
 # MyConfig
 
-
 ## Introduction
 
 This repo contains script files that handle post-installation tasks and install the apps that I would like to use on my PC.
-
-For now I am using Fedora so the script files are only for Fedora Linux. But the dotfiles can be used for any other distros.
 
 ## Linux post-installation tasks
 
@@ -17,11 +14,9 @@ For now I am using Fedora so the script files are only for Fedora Linux. But the
 
 ## Install MyConfig
 
-### Requirements
+You can run the scripts using either `git` or `wget`.
 
-Please install `git` first if it is not installed already.
-
-### Installation
+### Using `git`:
 
 Clone the repo to your home directory.
 ~~~
@@ -34,4 +29,12 @@ First run the `base.sh` script to install the basic apps
 
 Then run the other scripts depending on the DE you use like `gnome.sh` or  `kde.sh`
 
+### Using `wget`:
 
+Download the script file fist
+
+`wget https://sarmadna.github.io/myconfig/fedora/base.sh`
+
+Then run the script 
+
+`sh base.sh`

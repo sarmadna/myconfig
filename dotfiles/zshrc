@@ -104,7 +104,7 @@ source $ZSH/oh-my-zsh.sh
 alias zcon="vim ~/.zshrc"
 alias refresh="source ~/.zshrc"
 alias ports="sudo netstat -tulpn | grep LISTEN"
-alias update="sudo dnf -y upgrade --refresh && sudo dnf -y autoremove"
+alias update="sudo dnf -y upgrade --refresh && sudo dnf -y autoremove && flatpak update"
 alias gaac="git add --all && git commit -m 'update'"
 alias gpush="git push -u origin main"
 alias py="python3"

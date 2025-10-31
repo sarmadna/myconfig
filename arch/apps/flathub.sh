@@ -1,6 +1,6 @@
 #! /bin/sh
 
-sudo flatpak install flathub org.mozilla.firefox
-sudo flatpak install flathub org.onlyoffice.desktopeditors
-sudo flatpak install flathub org.kde.okular
-sudo flatpak install flathub org.videolan.VLC
+flatpak install flathub org.mozilla.firefox
+flatpak install flathub org.onlyoffice.desktopeditors
+flatpak install flathub org.kde.okular
+flatpak install flathub org.videolan.VLC

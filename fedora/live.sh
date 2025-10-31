@@ -9,4 +9,3 @@ sudo echo "fastestmirror=True" | sudo tee -a /etc/dnf/dnf.conf
 sudo echo "deltarpm=True" | sudo tee -a /etc/dnf/dnf.conf
 
 sudo dnf install gdisk -y
-

@@ -38,5 +38,4 @@ sudo dnf remove -y \
 	krfb \
 	kmouth
 
-printf "${yellow}>>>${nc} ${red}Done...!${nc}\n"
-
+printf "${yellow}>>>${nc} ${red}Done!${nc}\n"
