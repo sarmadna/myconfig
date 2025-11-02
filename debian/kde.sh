@@ -6,7 +6,6 @@ nc='\033[0m'
 
 printf "${yellow}>>>${nc} ${cyan}Installing apps...${nc}\n"
 sudo nala install -y \
-	openrgb \
 	gnome-disk-utility \
 	papirus-icon-theme
 
