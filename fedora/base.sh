@@ -9,10 +9,10 @@ printf "${yellow}>>>${nc} ${cyan}Configure the system...${nc}\n"
 sudo timedatectl set-timezone Asia/Baghdad
 
 printf "${yellow}>>>${nc} ${cyan}Update the system...${nc}\n"
-sudo dnf5 -y upgrade --refresh
+sudo dnf -y upgrade
 
 printf "${yellow}>>>${nc} ${cyan}Install cli apps...${nc}\n"
-sudo dnf5 -y install \
+sudo dnf -y install \
 	git \
 	vim \
 	zsh \
