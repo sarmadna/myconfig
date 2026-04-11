@@ -36,6 +36,7 @@ sudo dnf remove -y \
 	kde-connect \
 	krdc \
 	krfb \
+	kwalletmanager5 \
 	kmouth
 
 printf "${yellow}>>>${nc} ${red}Done!${nc}\n"
