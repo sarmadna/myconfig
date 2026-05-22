@@ -23,12 +23,7 @@ sudo dnf -y install \
 	cmatrix \
 	fastfetch \
 	util-linux-user \
-	transmission-cli \
-	terminus-fonts-console
-
-printf "${yellow}>>>${nc} ${cyan}Configure console font...${nc}\n"
-sudo mv /etc/vconsole.conf /etc/vconsole.conf.bak
-sudo cp ../dotfiles/vconsole.conf /etc/vconsole.conf
+	transmission-cli
 
 printf "${yellow}>>>${nc} ${cyan}Setup Vim...${nc}\n"
 git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
