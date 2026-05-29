@@ -36,6 +36,7 @@ sudo dnf remove -y \
 	kde-connect \
 	krdc \
 	krfb \
+	xwaylandvideobridge \
 	kmouth
 
 printf "${yellow}>>>${nc} ${red}Done!${nc}\n"
