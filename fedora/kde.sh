@@ -21,8 +21,6 @@ printf "${yellow}>>>${nc} ${cyan}Removing some useless apps...${nc}\n"
 sudo dnf remove -y \
 	akregator \
 	kmahjongg \
-	kmines \
-	kpat \
 	kaddressbook \
 	kmail \
 	dragon \
